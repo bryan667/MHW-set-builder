@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Skills from './MHW-api/skills'
+// import Skills from './MHW-api/skills'
+import DropDownSkills from './MHW-api/dropdown-skills2'
 
 class App extends Component {
 
@@ -10,7 +11,8 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Skills />
+                {/* <Skills /> */}
+                <DropDownSkills />
             </div>
         )
     }

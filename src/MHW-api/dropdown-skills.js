@@ -25,7 +25,7 @@ class DropSkills extends Component {
                 {(this.state.data.length >= 1) ?
                     <div>
                         <select name={this.props.name} value={this.props.selected} onChange={(event) => this.props.change(event)}>
-                            <option selected value='none'> -- select an option -- </option>
+                            <option value='none'> -- select an option -- </option>
                                 {this.state.data.map((data, datakey) => (
                                     data.ranks.map((ranks, rankskey) => (
                                         <option key={rankskey} value={ranks.slug}>
