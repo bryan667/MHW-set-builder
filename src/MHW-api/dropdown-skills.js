@@ -3,25 +3,30 @@ import React, { Component } from 'react';
 class DropSkills extends Component {
 
     state = {
-        currentlySelected: 'none'
+        data: []
     }
 
-    handleSelectOption = (event) => {
-        
-        this.setState({
-            currentlySelected: event.target.value
-        })
+
+    componentDidMount(){
+        fetch('http://localhost:3010/api/skills')
+        .then(res => res.json())
+        .then(data =>             
+            {
+                this.setState({
+                    data: data
+                })
+            }        
+        )
     }
 
     render() {
         return (
             <div>
-                {(this.props.items.length >= 1) ?
+                {(this.state.data.length >= 1) ?
                     <div>
-                        {console.log(this.props.items)}
-                        <select value={this.state.currentlySelected} onChange={(event) => this.handleSelectOption(event)}>
+                        <select name={this.props.name} value={this.props.selected} onChange={(event) => this.props.change(event)}>
                             <option selected value='none'> -- select an option -- </option>
-                                {this.props.items.map((data, datakey) => (
+                                {this.state.data.map((data, datakey) => (
                                     data.ranks.map((ranks, rankskey) => (
                                         <option key={rankskey} value={ranks.slug}>
                                         {ranks.slug}                                 
@@ -29,7 +34,8 @@ class DropSkills extends Component {
                                     ))
                                 ))}
                         </select>
-                        <div>{JSON.stringify(this.state)}</div>
+                        {/* <textarea rows="30" cols="50" value={JSON.stringify(this.state.data, null, 2)}>
+                        </textarea> */}
                     </div>
                 :
                 ''
