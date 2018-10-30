@@ -1,48 +1,59 @@
 import React, { Component } from 'react';
+import { Dropdown, Button } from 'semantic-ui-react'
+import { searchFunction } from '../misc/functions'
 
-class DropSkills extends Component {
+class DropDownSkills extends Component {
 
     state = {
-        data: []
+        options: [],
+        selectedValues: []
     }
 
-
-    componentDidMount(){
+    componentDidMount() {
         fetch('http://localhost:3010/api/skills')
         .then(res => res.json())
-        .then(data =>             
-            {
-                this.setState({
-                    data: data
+        .then(data => {
+                let tempState = this.state.options
+
+                data.forEach((skill, keySkill) => {
+                    
+                skill.ranks.forEach((rank, key)=> {
+                tempState.push(
+                    {key: data[keySkill].ranks[key].slug,
+                    text: data[keySkill].ranks[key].slug,
+                    value: data[keySkill].ranks[key].skillName}
+                    )
                 })
-            }        
-        )
+
+                this.setState({
+                    options: tempState
+                })
+
+                })
+            })
     }
+
+    handleChange = (e, {value}) => {
+
+        this.setState({
+            selectedValues: value
+        })
+    }
+
+
 
     render() {
         return (
-            <div>
-                {(this.state.data.length >= 1) ?
-                    <div>
-                        <select name={this.props.name} value={this.props.selected} onChange={(event) => this.props.change(event)}>
-                            <option value='none'> -- select an option -- </option>
-                                {this.state.data.map((data, datakey) => (
-                                    data.ranks.map((ranks, rankskey) => (
-                                        <option key={rankskey} value={ranks.slug}>
-                                        {ranks.slug}                                 
-                                        </option>
-                                    ))
-                                ))}
-                        </select>
-                        {/* <textarea rows="30" cols="50" value={JSON.stringify(this.state.data, null, 2)}>
-                        </textarea> */}
-                    </div>
-                :
-                ''
-                }
+            <div className='half'>
+                <Dropdown placeholder='enter search' 
+                fluid multiple search selection options={this.state.options}
+                onChange={this.handleChange}
+                value={this.state.selectedValues}
+                />
+                <Button onClick={(e) => searchFunction(this.state.selectedValues)}>Search</Button>
             </div>
         );
     }
 }
 
-export default DropSkills;
+export default DropDownSkills;

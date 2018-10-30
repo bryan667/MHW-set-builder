@@ -1,0 +1,12 @@
+body {
+    margin: 10px;
+}
+
+.half {
+    width: 50%
+}
+
+.center {
+    width: 30%;
+    margin: auto;
+}
