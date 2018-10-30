@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import DropDownSkills from './MHW-api/dropdown-skills'
+import App from './app'
+
 import './app.css'
 
-ReactDOM.render(<DropDownSkills />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
