@@ -1,24 +1,24 @@
 body {
-    margin: 10px;
+   margin: 10px;
 }
 
 .margin {
-    margin: 10px;
+   margin: 10px;
 }
 
 .flex {
-    display: flex;
+   display: flex;
 }
 
 .side {
-    flex: 1;
+   flex: 1;
 }
 
 .half {
-    width: 50%
+   width: 50%;
 }
 
 .center {
-    width: 30%;
-    margin: auto;
+   width: 30%;
+   margin: auto;
 }

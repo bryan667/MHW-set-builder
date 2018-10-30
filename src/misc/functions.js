@@ -1,4 +1,3 @@
-
-export const searchFunction = (selectedValues) => {
-        console.log(selectedValues)
-}
+export const searchFunction = selectedValues => {
+  console.log(selectedValues);
+};
