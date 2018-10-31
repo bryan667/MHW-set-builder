@@ -7,7 +7,7 @@ import {
    Image,
    Segment,
 } from 'semantic-ui-react';
-import { searchFunction } from '../misc/functions';
+import { searchFunction, fetchSkills } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
 
 class DropDownSkills extends Component {
@@ -18,26 +18,14 @@ class DropDownSkills extends Component {
    };
 
    componentDidMount() {
-      fetch('http://localhost:3010/api/skills')
-         .then(res => res.json())
-         .then(data => {
-            let tempState = this.state.options;
+      const tempState = fetchSkills();
 
-            data.forEach((skill, keySkill) => {
-               skill.ranks.forEach((rank, key) => {
-                  tempState.push({
-                     key: data[keySkill].ranks[key].slug,
-                     text: data[keySkill].ranks[key].slug,
-                     value: data[keySkill].ranks[key].slug,
-                  });
-               });
-            });
-
-            this.setState({
-               options: tempState,
-               isLoading: false,
-            });
+      tempState.then(tempState => {
+         this.setState({
+            options: tempState,
+            isLoading: false,
          });
+      });
    }
 
    handleChange = (e, { value }) => {

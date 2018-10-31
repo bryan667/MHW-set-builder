@@ -7,6 +7,7 @@ import {
    Image,
    Segment,
 } from 'semantic-ui-react';
+import { fetchArmor } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
 
 class ArmorList extends Component {
@@ -16,31 +17,14 @@ class ArmorList extends Component {
    };
 
    componentDidMount() {
-      fetch('http://localhost:3010/api/armor')
-         .then(res => res.json())
-         .then(data => {
-            let tempState = [];
+      const tempState = fetchArmor();
 
-            data.forEach((armor, keyArmor) => {
-               tempState.push({ name: armor.name });
-
-               tempState[keyArmor].skills = [];
-
-               armor.skills.forEach((skills, key) => {
-                  tempState[keyArmor].skills.push({
-                     slug: skills.slug,
-                     level: skills.level,
-                     description: skills.description,
-                     skillName: skills.skillName,
-                  });
-               });
-            });
-
-            this.setState({
-               armor: tempState,
-               isLoading: false,
-            });
+      tempState.then(tempState => {
+         this.setState({
+            armor: tempState,
+            isLoading: false,
          });
+      });
    }
 
    render() {
