@@ -1,31 +1,29 @@
-import { ItemDescription } from 'semantic-ui-react';
 
 export const searchFunction = selectedValues => {
-   console.log(selectedValues);
-
-   let awyis = ['hunger-resistance-rank-1'];
-
    const fetchedArmor = fetchArmor();
-
+   
    const searchResults = fetchedArmor.then(armor => {
-      let filteredResults = armor.filter(item => {
-         awyis
-            .map(val => {
-               if (item.skills.length !== 0) {
-                  // console.log('aw', item.skills[0].slug.indexOf(val));
-                  return item.skills[0].slug.indexOf(val);
-               } else {
-                  return item.skills.indexOf(val);
-               }
+
+      const filteredResults = []
+
+      for (let searchVal of selectedValues) {
+            armor.forEach((armor, key)=> {
+                  armor.skills.forEach((armorSkills)=> {
+                        if (searchVal.name === armorSkills.skillName) {
+                              filteredResults.push({
+                                    name: armor.name,
+                                    type: armor.type,
+                                    skills: armor.skills
+                              })
+                        }
+                  })
             })
-            .map(val => (val > -1 ? true : false))
-            .reduce((acc, cum) => acc && cum);
-      });
-      return filteredResults;
+      }
+      return filteredResults           
    });
 
    searchResults.then(result => {
-      console.log(result);
+      console.log('result: ', result);
    });
 };
 
@@ -36,7 +34,10 @@ export const fetchArmor = () => {
          let tempState = [];
 
          data.forEach((armor, keyArmor) => {
-            tempState.push({ name: armor.name });
+            tempState.push({ 
+                  name: armor.name, 
+                  type: armor.type
+            });
 
             tempState[keyArmor].skills = [];
 
