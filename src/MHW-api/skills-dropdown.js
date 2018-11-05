@@ -29,8 +29,24 @@ class DropDownSkills extends Component {
    }
 
    handleChange = (e, { value }) => {
+
+      const tempOptions = this.state.options
+      const newOptions = []
+
+      tempOptions.forEach((item, key)=> {
+        for (let key of value) {
+            if (key === item.value) {
+                newOptions.push({
+                    key: item.key,
+                    name: item.name,
+                    level: item.level
+                })
+            }
+        }
+      })
+
       this.setState({
-         selectedValues: value,
+         selectedValues: newOptions
       });
    };
 
@@ -54,7 +70,6 @@ class DropDownSkills extends Component {
                      selection
                      options={this.state.options}
                      onChange={this.handleChange}
-                     value={this.state.selectedValues}
                   />
                   <Button
                      onClick={e => searchFunction(this.state.selectedValues)}

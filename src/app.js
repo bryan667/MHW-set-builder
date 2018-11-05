@@ -1,5 +1,5 @@
 import React from 'react';
-import DropDownSkills from './MHW-api/dropdown-skills';
+import DropDownSkills from './MHW-api/skills-dropdown';
 import ArmorList from './MHW-api/armor-list';
 import ArmorResults from './MHW-api/armor-results';
 
