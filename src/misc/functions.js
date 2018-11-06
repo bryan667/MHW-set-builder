@@ -19,13 +19,70 @@ export const searchFunction = selectedValues => {
                   })
             })
       }
-      return filteredResults           
+      return filteredResults
    });
 
-   searchResults.then(result => {
-      console.log('result: ', result);
-   });
+   const assembledArmorResults = assembleArmor(searchResults)
 };
+
+const assembleArmor = (searchResults) => {
+      searchResults.then((searchResults) => {
+            const classifiedArmor = classifyArmor(searchResults)
+
+              classifiedArmor.waist.forEach((headArmor)=> {
+                  classifiedArmor.chest.forEach((chestArmor)=> {
+                        classifiedArmor.gloves.forEach((glovesArmor)=> {
+                              classifiedArmor.waist.forEach((waistArmor)=> {                              
+                                    classifiedArmor.legs.forEach((legsArmor)=> {
+                                          console.log(
+                                                headArmor,
+                                                chestArmor,
+                                                glovesArmor,
+                                                waistArmor,
+                                                legsArmor
+                                          )
+                                    })                                             
+                              })
+                        })
+                  })
+            })
+
+      })
+}
+
+const classifyArmor = (searchResults) => {
+
+      let classifiedArmor = {
+            head:[{name: "Any Armor", type: "head", skills: "Any Skill"}],
+            chest:[{name: "Any Armor", type: "chest", skills: "Any Skill"}],
+            gloves:[{name: "Any Armor", type: "gloves", skills: "Any Skill"}],
+            waist:[{name: "Any Armor", type: "waist", skills: "Any Skill"}],
+            legs:[{name: "Any Armor", type: "legs", skills: "Any Skill"}]
+      }
+            searchResults.forEach((armor, key)=> {
+                  switch(armor.type) {
+                        case 'head':
+                              classifiedArmor.head.push(armor)
+                              break
+                        case 'chest':
+                              classifiedArmor.chest.push(armor)
+                              break
+                        case 'gloves':
+                              classifiedArmor.gloves.push(armor)
+                              break
+                        case 'waist':
+                              classifiedArmor.waist.push(armor)
+                              break
+                        case 'legs':
+                              classifiedArmor.legs.push(armor)
+                              break
+                        default:
+                              break
+                  }
+            })
+
+      return classifiedArmor
+}
 
 export const fetchArmor = () => {
    const fetchedArmor = fetch('http://localhost:3010/api/armor')
