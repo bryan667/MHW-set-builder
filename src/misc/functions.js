@@ -1,4 +1,3 @@
-
 export const searchFunction = selectedValues => {
    const fetchedArmor = fetchArmor();
    
@@ -22,42 +21,56 @@ export const searchFunction = selectedValues => {
       return filteredResults
    });
 
-   const assembledArmorResults = assembleArmor(searchResults)
+   const assembledArmorResults = assembleArmor(searchResults, selectedValues)
 };
 
-const assembleArmor = (searchResults) => {
-      searchResults.then((searchResults) => {
+const assembleArmor = (searchResults, selectedValues) => {
+
+      const passedArmor = searchResults.then((searchResults) => {
             const classifiedArmor = classifyArmor(searchResults)
+
+            let passedArmor = []
 
               classifiedArmor.waist.forEach((headArmor)=> {
                   classifiedArmor.chest.forEach((chestArmor)=> {
                         classifiedArmor.gloves.forEach((glovesArmor)=> {
                               classifiedArmor.waist.forEach((waistArmor)=> {                              
                                     classifiedArmor.legs.forEach((legsArmor)=> {
-                                          console.log(
+                                          let assembledArmor = {
                                                 headArmor,
                                                 chestArmor,
                                                 glovesArmor,
                                                 waistArmor,
                                                 legsArmor
-                                          )
+                                          }
+                                          const goodArmor = compareIfPassed(assembledArmor, selectedValues)
+                                          if (goodArmor !== null) {
+                                                console.log(goodArmor)
+                                                passedArmor.push(goodArmor)
+                                          }
                                     })                                             
                               })
                         })
                   })
             })
-
+            return passedArmor
       })
+
+      passedArmor.then((awyis)=> {
+            console.log(awyis)
+      })
+
+
 }
 
 const classifyArmor = (searchResults) => {
 
       let classifiedArmor = {
-            head:[{name: "Any Armor", type: "head", skills: "Any Skill"}],
-            chest:[{name: "Any Armor", type: "chest", skills: "Any Skill"}],
-            gloves:[{name: "Any Armor", type: "gloves", skills: "Any Skill"}],
-            waist:[{name: "Any Armor", type: "waist", skills: "Any Skill"}],
-            legs:[{name: "Any Armor", type: "legs", skills: "Any Skill"}]
+            head:[{name: "Any Armor", type: "head", skills: ["Any Skill"]}],
+            chest:[{name: "Any Armor", type: "chest", skills: ["Any Skill"]}],
+            gloves:[{name: "Any Armor", type: "gloves", skills: ["Any Skill"]}],
+            waist:[{name: "Any Armor", type: "waist", skills: ["Any Skill"]}],
+            legs:[{name: "Any Armor", type: "legs", skills: ["Any Skill"]}]
       }
             searchResults.forEach((armor, key)=> {
                   switch(armor.type) {
@@ -82,6 +95,49 @@ const classifyArmor = (searchResults) => {
             })
 
       return classifiedArmor
+}
+
+const compareIfPassed = (assembledArmor, selectedValues) => {
+
+      let armorSkillTotal = {}
+
+      for (let key in assembledArmor) {            
+            assembledArmor[key].skills.forEach((skills)=> {
+
+                  if (skills !== 'Any Skill') {
+                        if (armorSkillTotal.hasOwnProperty(skills.skillName) === true) {
+                              armorSkillTotal[skills.skillName].skillName = skills.skillName
+                              armorSkillTotal[skills.skillName].points = armorSkillTotal[skills.skillName].points + skills.level
+                        }
+
+                        else {
+                              armorSkillTotal[skills.skillName] = {
+                                    skillName: skills.skillName,
+                                    points: skills.level
+                              }
+                        }
+                  }
+            })
+      }
+
+      let passed = true
+
+      for (let key in armorSkillTotal) {
+            selectedValues.forEach((skill)=> {
+                  if (skill.name === key) {
+                        if (armorSkillTotal[key].points < skill.level) {
+                              passed = false
+                        }
+                  }
+            })
+      }
+
+      if (passed === true) {
+            console.log(armorSkillTotal)
+            return assembledArmor
+      } else {
+            return null
+      }
 }
 
 export const fetchArmor = () => {
