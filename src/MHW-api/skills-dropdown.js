@@ -9,14 +9,14 @@ import {
 } from 'semantic-ui-react';
 import { searchFunction, fetchSkills } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
-import ArmorResults from './armor-results'
+import ArmorResults from './armor-results2'
 
 class DropDownSkills extends Component {
    state = {
       options: [],
       selectedValues: [],
       isLoading: true,
-      armorResults:'',
+      armorResults: '{}',
       arrmorResultLoading: false,
    };
 
@@ -58,16 +58,13 @@ class DropDownSkills extends Component {
     this.setState({
         armorResultLoading: true
     })
-
-    const searchResults = searchFunction(this.state.selectedValues)
     
-    searchResults.then((awyis)=> {
+    const searchResults = searchFunction(this.state.selectedValues)
+    searchResults.then(awyis=> {
 
-        let text = `Total Results: ${awyis.length} \n ${(JSON.stringify(awyis, null, 8))}`
-
-        console.log(text)
+        // let text = `Total Results: ${awyis.length} \n ${(JSON.stringify(awyis))}`
         this.setState({
-            armorResults: text,
+            armorResults: (JSON.stringify(awyis)),
             armorResultLoading: false
         })
     })
@@ -85,7 +82,7 @@ class DropDownSkills extends Component {
                     <Image src={simpleImage} />
                 </Segment>
             ) : (
-               <div>
+               <div className='drop'>
                     <Dropdown
                         placeholder="Please type the skills you search here"
                         fluid

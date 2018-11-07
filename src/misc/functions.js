@@ -6,7 +6,7 @@ export const searchFunction = selectedValues => {
       const filteredResults = []
 
       for (let searchVal of selectedValues) {
-            armor.forEach((armor, key)=> {
+            armor.forEach((armor)=> {
                   armor.skills.forEach((armorSkills)=> {
                         if (searchVal.name === armorSkills.skillName) {
                               filteredResults.push({
@@ -98,7 +98,6 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
 
       let armorSkillTotal = {}
 
-
       //get total skill of armor set
       for (let key in assembledArmor) {            
             assembledArmor[key].skills.forEach((skills)=> {
@@ -107,20 +106,20 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
                               armorSkillTotal[skills.skillName].skillName = skills.skillName
                               armorSkillTotal[skills.skillName].points = armorSkillTotal[skills.skillName].points + skills.level
                         }
-
                         else {
                               armorSkillTotal[skills.skillName] = {
                                     skillName: skills.skillName,
                                     points: skills.level
                               }
                         }
+                  } else {
                   }
             })
       }
 
       let passed = true
 
-      if (armorSkillTotal) {
+      if (Object.keys(armorSkillTotal).length > 0) {
             selectedValues.forEach((selected, index)=> {
                   if (armorSkillTotal.hasOwnProperty(selected.name) === true ) {
                         for (let key in armorSkillTotal) {
@@ -135,6 +134,8 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
                         passed = false
                   }            
             })
+      } else {
+            passed = false
       }
 
 
