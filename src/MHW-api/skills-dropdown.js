@@ -10,14 +10,14 @@ import {
 import { searchFunction, fetchSkills } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
 import ArmorResults from './armor-results'
-import ArmorList from './armor-list';
 
 class DropDownSkills extends Component {
    state = {
       options: [],
       selectedValues: [],
       isLoading: true,
-      ArmorResults:''
+      armorResults:'',
+      arrmorResultLoading: false,
    };
 
    componentDidMount() {
@@ -55,14 +55,20 @@ class DropDownSkills extends Component {
 
    searchButtonClick = () => {
 
+    this.setState({
+        armorResultLoading: true
+    })
+
     const searchResults = searchFunction(this.state.selectedValues)
     
     searchResults.then((awyis)=> {
 
         let text = `Total Results: ${awyis.length} \n ${(JSON.stringify(awyis, null, 8))}`
 
+        console.log(text)
         this.setState({
-            ArmorResults: text
+            armorResults: text,
+            armorResultLoading: false
         })
     })
 
@@ -70,7 +76,7 @@ class DropDownSkills extends Component {
 
    render() {
       return (
-         <div className='flex'>
+         <div>
             {this.state.isLoading ? (
                 <Segment>
                     <Dimmer active inverted>
@@ -79,9 +85,9 @@ class DropDownSkills extends Component {
                     <Image src={simpleImage} />
                 </Segment>
             ) : (
-               <div className='side margin'>
+               <div>
                     <Dropdown
-                        placeholder="enter search"
+                        placeholder="Please type the skills you search here"
                         fluid
                         multiple
                         search
@@ -94,14 +100,21 @@ class DropDownSkills extends Component {
                     >
                         Search
                     </Button>
-                    <div style={{ marginTop: '10px' }}>
-                        <ArmorList />
-                    </div>
                </div>
             )}
-            <div className='side margin'>
-                <ArmorResults value={this.state.ArmorResults}/>
-            </div>
+
+            {this.state.armorResultLoading ? (
+                <Segment>
+                    <Dimmer active inverted>
+                        <Loader content="Loading" size="medium" />
+                    </Dimmer>
+                    <Image src={simpleImage} />
+                </Segment>
+            ) : (
+                <div style={{marginTop: '10px'}}>
+                    <ArmorResults value={this.state.armorResults}/>
+                </div>
+            )}
          </div>
       );
    }
