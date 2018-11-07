@@ -9,12 +9,15 @@ import {
 } from 'semantic-ui-react';
 import { searchFunction, fetchSkills } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
+import ArmorResults from './armor-results'
+import ArmorList from './armor-list';
 
 class DropDownSkills extends Component {
    state = {
       options: [],
       selectedValues: [],
       isLoading: true,
+      ArmorResults:''
    };
 
    componentDidMount() {
@@ -50,34 +53,55 @@ class DropDownSkills extends Component {
       });
    };
 
+   searchButtonClick = () => {
+
+    const searchResults = searchFunction(this.state.selectedValues)
+    
+    searchResults.then((awyis)=> {
+
+        let text = `Total Results: ${awyis.length} \n ${(JSON.stringify(awyis, null, 8))}`
+
+        this.setState({
+            ArmorResults: text
+        })
+    })
+
+   } 
+
    render() {
       return (
-         <div>
+         <div className='flex'>
             {this.state.isLoading ? (
-               <Segment>
-                  <Dimmer active inverted>
-                     <Loader content="Loading" size="medium" />
-                  </Dimmer>
-                  <Image src={simpleImage} />
-               </Segment>
+                <Segment>
+                    <Dimmer active inverted>
+                        <Loader content="Loading" size="medium" />
+                    </Dimmer>
+                    <Image src={simpleImage} />
+                </Segment>
             ) : (
-               <div>
-                  <Dropdown
-                     placeholder="enter search"
-                     fluid
-                     multiple
-                     search
-                     selection
-                     options={this.state.options}
-                     onChange={this.handleChange}
-                  />
-                  <Button
-                     onClick={e => searchFunction(this.state.selectedValues)}
-                  >
-                     Search
-                  </Button>
+               <div className='side margin'>
+                    <Dropdown
+                        placeholder="enter search"
+                        fluid
+                        multiple
+                        search
+                        selection
+                        options={this.state.options}
+                        onChange={this.handleChange}
+                    />
+                    <Button
+                        onClick={(e)=> this.searchButtonClick(e)}
+                    >
+                        Search
+                    </Button>
+                    <div style={{ marginTop: '10px' }}>
+                        <ArmorList />
+                    </div>
                </div>
             )}
+            <div className='side margin'>
+                <ArmorResults value={this.state.ArmorResults}/>
+            </div>
          </div>
       );
    }

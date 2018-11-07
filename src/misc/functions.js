@@ -22,6 +22,7 @@ export const searchFunction = selectedValues => {
    });
 
    const assembledArmorResults = assembleArmor(searchResults, selectedValues)
+   return assembledArmorResults
 };
 
 const assembleArmor = (searchResults, selectedValues) => {
@@ -45,7 +46,6 @@ const assembleArmor = (searchResults, selectedValues) => {
                                           }
                                           const goodArmor = compareIfPassed(assembledArmor, selectedValues)
                                           if (goodArmor !== null) {
-                                                console.log(goodArmor)
                                                 passedArmor.push(goodArmor)
                                           }
                                     })                                             
@@ -56,10 +56,7 @@ const assembleArmor = (searchResults, selectedValues) => {
             return passedArmor
       })
 
-      passedArmor.then((awyis)=> {
-            console.log(awyis)
-      })
-
+      return passedArmor
 
 }
 
@@ -101,9 +98,10 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
 
       let armorSkillTotal = {}
 
+
+      //get total skill of armor set
       for (let key in assembledArmor) {            
             assembledArmor[key].skills.forEach((skills)=> {
-
                   if (skills !== 'Any Skill') {
                         if (armorSkillTotal.hasOwnProperty(skills.skillName) === true) {
                               armorSkillTotal[skills.skillName].skillName = skills.skillName
@@ -122,18 +120,25 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
 
       let passed = true
 
-      for (let key in armorSkillTotal) {
-            selectedValues.forEach((skill)=> {
-                  if (skill.name === key) {
-                        if (armorSkillTotal[key].points < skill.level) {
-                              passed = false
+      if (armorSkillTotal) {
+            selectedValues.forEach((selected, index)=> {
+                  if (armorSkillTotal.hasOwnProperty(selected.name) === true ) {
+                        for (let key in armorSkillTotal) {
+                              if (selected.name === key) {
+                                    if (armorSkillTotal[key].points < selected.level) {
+                                          passed = false
+                                    }
+                              }
                         }
                   }
+                  else {
+                        passed = false
+                  }            
             })
       }
 
+
       if (passed === true) {
-            console.log(armorSkillTotal)
             return assembledArmor
       } else {
             return null
