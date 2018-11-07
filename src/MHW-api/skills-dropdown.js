@@ -7,16 +7,16 @@ import {
    Image,
    Segment,
 } from 'semantic-ui-react';
-import { searchFunction, fetchSkills } from '../misc/functions';
+import { searchFunction, fetchSkills, convertReadable } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
-import ArmorResults from './armor-results2'
+import ArmorResults from './armor-results'
 
 class DropDownSkills extends Component {
    state = {
       options: [],
       selectedValues: [],
       isLoading: true,
-      armorResults: '{}',
+      armorResults: '',
       arrmorResultLoading: false,
    };
 
@@ -55,20 +55,20 @@ class DropDownSkills extends Component {
 
    searchButtonClick = () => {
 
+    if (this.state.selectedValues.length > 0) {
+        
     this.setState({
         armorResultLoading: true
-    })
-    
-    const searchResults = searchFunction(this.state.selectedValues)
-    searchResults.then(awyis=> {
-
-        // let text = `Total Results: ${awyis.length} \n ${(JSON.stringify(awyis))}`
-        this.setState({
-            armorResults: (JSON.stringify(awyis)),
-            armorResultLoading: false
+    })    
+        const searchResults = searchFunction(this.state.selectedValues)
+        searchResults.then(results=> {
+            const readable = convertReadable(results)
+            this.setState({
+                armorResults: readable,
+                armorResultLoading: false
+            })
         })
-    })
-
+    }
    } 
 
    render() {
@@ -84,7 +84,7 @@ class DropDownSkills extends Component {
             ) : (
                <div className='drop'>
                     <Dropdown
-                        placeholder="Please type the skills you search here"
+                        placeholder="Type the skills you would like to search"
                         fluid
                         multiple
                         search

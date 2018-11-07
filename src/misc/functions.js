@@ -32,7 +32,7 @@ const assembleArmor = (searchResults, selectedValues) => {
 
             let passedArmor = []
 
-              classifiedArmor.waist.forEach((headArmor)=> {
+              classifiedArmor.head.forEach((headArmor)=> {
                   classifiedArmor.chest.forEach((chestArmor)=> {
                         classifiedArmor.gloves.forEach((glovesArmor)=> {
                               classifiedArmor.waist.forEach((waistArmor)=> {                              
@@ -56,8 +56,7 @@ const assembleArmor = (searchResults, selectedValues) => {
             return passedArmor
       })
 
-      return passedArmor
-
+            return passedArmor
 }
 
 const classifyArmor = (searchResults) => {
@@ -98,7 +97,6 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
 
       let armorSkillTotal = {}
 
-      //get total skill of armor set
       for (let key in assembledArmor) {            
             assembledArmor[key].skills.forEach((skills)=> {
                   if (skills !== 'Any Skill') {
@@ -144,6 +142,27 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
       } else {
             return null
       }
+}
+
+export const convertReadable = (results) => {
+      console.log(results)
+      let stringResults = `Total Searched: ${results.length} \n\n`
+      results.forEach((result)=> {
+            for (let key in result) {
+                  stringResults += `${result[key].type}: ${result[key].name} - `
+
+                  result[key].skills.forEach((skills)=> {
+                        if (skills !== 'Any Skill') {
+                              stringResults += `${skills.skillName} ${skills.level}, `
+                        } else {
+                              stringResults += `Any Skill`
+                        }
+                  })
+                  stringResults += `\n`
+            }
+            stringResults += `\n`
+      })
+      return stringResults
 }
 
 export const fetchArmor = () => {
