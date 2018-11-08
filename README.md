@@ -1,7 +1,8 @@
 This project was bootstrapped with [Create React App]
 
-NodeJS, Express, MHW API
+NodeJS, Express, MHW API,
+
+git run dev
 
 **** Work in progress ***
 
-git run dev

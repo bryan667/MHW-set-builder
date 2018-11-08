@@ -1,7 +1,6 @@
 export const searchFunction = (selectedValues, options) => {
       const selectedValuesObject = [];
 
-      //Convert search criteria to object
       options.forEach((item, key) => {
             for (let key of selectedValues) {
                   if (key === item.value) {
@@ -14,7 +13,6 @@ export const searchFunction = (selectedValues, options) => {
             }
       });
 
-      //Remove duplicate skills from search citeria
       const selectedValuesFiltered = [];
       selectedValuesObject.forEach((skill, key) => {
             let dupCheck = false
@@ -32,7 +30,6 @@ export const searchFunction = (selectedValues, options) => {
       });
 
 
-      //Start fetching armor results
       const fetchedArmor = fetchArmor();
 
       const searchResults = fetchedArmor.then(armor => {

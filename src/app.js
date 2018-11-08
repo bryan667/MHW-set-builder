@@ -1,10 +1,12 @@
 import React from 'react';
-import DropDownSkills from './MHW-api/skills-dropdown';
+import Header from './main-page/header'
+import DropDownSkills from './main-page/skills-dropdown';
 
 const App = () => {
       return (
             <div>
-                  <DropDownSkills />
+                <Header />
+                <DropDownSkills />
             </div>
       );
 };
