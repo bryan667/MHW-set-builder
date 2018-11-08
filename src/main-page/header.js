@@ -7,7 +7,8 @@ const Header = () => {
             fontFamily: 'Righteous',
             fontSize: '25px',
             margin: 'auto',
-            width: '25%'
+            width: '50%',
+            textAlign: 'center'
         }}
         >
             MHW Armor Set Searcher

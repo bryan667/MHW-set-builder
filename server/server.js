@@ -54,7 +54,7 @@ if (fs.existsSync('./server/JSON/MHW-armor.txt') === false) {
 //                    ROUTER                     //
 // ============================================= //
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
       res.sendFile(path.join(__dirname+'/../build/index.html'));
 });
 
