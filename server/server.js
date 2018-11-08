@@ -21,17 +21,11 @@ app.listen(port, () => {
 if (fs.existsSync('./server/JSON/MHW-skills.txt') === false) {
       axios.get('https://mhw-db.com/skills')
             .then(Awyis => {
-                  fs.writeFile(
-                        './server/JSON/MHW-skills.txt',
-                        JSON.stringify(Awyis.data, null, 2),
+                  fs.writeFile('./server/JSON/MHW-skills.txt', JSON.stringify(Awyis.data, null, 2), 
                         err => {
-                              if (err)
-                                    return res.json({
-                                          error: 'cannot write MHW-skills file',
-                                    });
+                              if (err) {console.log('cannot write MHW-skills file')}
                               console.log('MHW-skills file has been created');
-                        }
-                  );
+                        });
             })
             .catch(err => {
                   return res.json({ error: err });
@@ -41,14 +35,9 @@ if (fs.existsSync('./server/JSON/MHW-skills.txt') === false) {
 if (fs.existsSync('./server/JSON/MHW-armor.txt') === false) {
       axios.get('https://mhw-db.com/armor')
             .then(Awyis => {
-                  fs.writeFile(
-                        './server/JSON/MHW-armor.txt',
-                        JSON.stringify(Awyis.data, null, 2),
+                  fs.writeFile('./server/JSON/MHW-armor.txt',JSON.stringify(Awyis.data, null, 2),
                         err => {
-                              if (err)
-                                    return res.json({
-                                          error: 'cannot write MHW-armor file',
-                                    });
+                              if (err) {console.log('cannot write MHW-skills file')}
                               console.log('MHW-armor file has been created');
                         }
                   );
