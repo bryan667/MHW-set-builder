@@ -3,11 +3,11 @@ import React from 'react';
 const Header = () => {
     return (
         <div style={{
-            padding: '50px',
+            padding: '50px 10px 50px 10px',
             fontFamily: 'Righteous',
             fontSize: '25px',
             margin: 'auto',
-            width: '50%',
+            width: '100%',
             textAlign: 'center'
         }}
         >
