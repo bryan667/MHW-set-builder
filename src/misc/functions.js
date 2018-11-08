@@ -1,6 +1,7 @@
 export const searchFunction = (selectedValues, options) => {
       const selectedValuesObject = [];
 
+      //Convert search criteria to object
       options.forEach((item, key) => {
             for (let key of selectedValues) {
                   if (key === item.value) {
@@ -13,21 +14,31 @@ export const searchFunction = (selectedValues, options) => {
             }
       });
 
-      //Check and select those without duplicate skills
+      //Remove duplicate skills from search citeria
       const selectedValuesFiltered = [];
-
       selectedValuesObject.forEach((skill, key) => {
-            console.log(skill);
+            let dupCheck = false
+            for (let i = 0; i < selectedValuesFiltered.length; i++) {
+                  if (selectedValuesFiltered[i].name === skill.name) {
+                        if (skill.level > selectedValuesFiltered[i].level) {
+                              selectedValuesFiltered[i] = skill
+                              dupCheck = true
+                        }
+                  }
+            }
+            if(dupCheck === false) {
+                  selectedValuesFiltered.push(skill)
+            }
       });
 
-      console.log(selectedValuesFiltered);
 
+      //Start fetching armor results
       const fetchedArmor = fetchArmor();
 
       const searchResults = fetchedArmor.then(armor => {
             const filteredResults = [];
 
-            for (let searchVal of selectedValuesObject) {
+            for (let searchVal of selectedValuesFiltered) {
                   armor.forEach(armor => {
                         armor.skills.forEach(armorSkills => {
                               if (searchVal.name === armorSkills.skillName) {
@@ -45,7 +56,7 @@ export const searchFunction = (selectedValues, options) => {
 
       const assembledArmorResults = assembleArmor(
             searchResults,
-            selectedValuesObject
+            selectedValuesFiltered
       );
       return assembledArmorResults;
 };
