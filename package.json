@@ -1,6 +1,7 @@
 {
   "name": "mhw-set",
   "version": "0.1.0",
+  "proxy": "http://localhost:3010",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.4.0",
@@ -21,13 +22,14 @@
     "semantic-ui-react": "^0.83.0"
   },
   "scripts": {
-    "start": "concurrently \"npm run client\"",
+    "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "nodemon ./server/server.js",
     "client": "react-scripts start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
