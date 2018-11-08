@@ -78,7 +78,7 @@ class DropDownSkills extends Component {
                         ) : (
                               <div className="drop flex">
                                     <Dropdown
-                                          placeholder="Type the skills you would like to search"
+                                          placeholder="Type the skills to search"
                                           fluid
                                           multiple
                                           search
