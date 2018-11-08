@@ -11,7 +11,7 @@ app.use(cors());
 
 const port = process.env.PORT || 3010;
 
-app.use(express.static(path.join(__dirname, '/build')))
+app.use(express.static(path.join(__dirname, '/../build')))
 
 app.listen(port, () => {
       console.log(`server running on port 3010`);
@@ -55,7 +55,7 @@ if (fs.existsSync('./server/JSON/MHW-armor.txt') === false) {
 // ============================================= //
 
 app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname+'/build/index.html'));
+      res.sendFile(path.join(__dirname+'/../build/index.html'));
 });
 
 app.get('/api/skills', (req, res) => {
