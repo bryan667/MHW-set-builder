@@ -224,7 +224,7 @@ export const convertReadable = results => {
 };
 
 export const fetchArmor = () => {
-      const fetchedArmor = fetch('http://localhost:3010/api/armor')
+      const fetchedArmor = fetch('/api/armor')
             .then(res => res.json())
             .then(data => {
                   let tempState = [];
@@ -254,7 +254,7 @@ export const fetchArmor = () => {
 };
 
 export const fetchSkills = () => {
-      const fetchedSkills = fetch('http://localhost:3010/api/skills')
+      const fetchedSkills = fetch('/api/skills')
             .then(res => res.json())
             .then(data => {
                   let tempState = [];

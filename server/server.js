@@ -8,7 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.listen(3010, () => {
+const port = process.env.PORT || 3010;
+
+app.listen(port, () => {
       console.log(`server running on port 3010`);
 });
 
