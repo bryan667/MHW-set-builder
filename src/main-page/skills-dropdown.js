@@ -10,6 +10,7 @@ import {
 import {
       searchFunction,
       fetchSkills,
+      fetchArmor,
       convertReadable,
 } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
@@ -21,17 +22,18 @@ class DropDownSkills extends Component {
             selectedValues: [],
             isLoading: true,
             armorResults: '',
-            arrmorResultLoading: false,
+            armorResultLoading: false,
+            armorList: []
       };
 
-      componentDidMount() {
-            const tempState = fetchSkills();
+      async componentDidMount() {
+            const  skillState = await fetchSkills()
+            const armorState = await fetchArmor()
 
-            tempState.then(tempState => {
-                  this.setState({
-                        options: tempState,
-                        isLoading: false,
-                  });
+             this.setState({
+                  options: skillState,
+                  isLoading: false,
+                  armorList: armorState
             });
       }
 
@@ -48,14 +50,13 @@ class DropDownSkills extends Component {
                   });
                   const searchResults = searchFunction(
                         this.state.selectedValues,
-                        this.state.options
+                        this.state.options,
+                        this.state.armorList
                   );
-                  searchResults.then(results => {
-                        const readable = convertReadable(results);
-                        this.setState({
-                              armorResults: readable,
-                              armorResultLoading: false,
-                        });
+                  const readable = convertReadable(searchResults);
+                  this.setState({
+                        armorResults: readable,
+                        armorResultLoading: false,
                   });
             }
       };

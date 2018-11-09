@@ -1,4 +1,4 @@
-export const searchFunction = (selectedValues, options) => {
+export const searchFunction = (selectedValues, options, armorList) => {
       const selectedValuesObject = [];
 
       options.forEach((item, key) => {
@@ -29,68 +29,61 @@ export const searchFunction = (selectedValues, options) => {
             }
       });
 
+      const filteredResults = [];
 
-      const fetchedArmor = fetchArmor();
-
-      const searchResults = fetchedArmor.then(armor => {
-            const filteredResults = [];
-
-            for (let searchVal of selectedValuesFiltered) {
-                  armor.forEach(armor => {
-                        armor.skills.forEach(armorSkills => {
-                              if (searchVal.name === armorSkills.skillName) {
-                                    filteredResults.push({
-                                          name: armor.name,
-                                          type: armor.type,
-                                          skills: armor.skills,
-                                    });
-                              }
-                        });
+      for (let searchVal of selectedValuesFiltered) {
+            armorList.forEach(armor => {
+                  armor.skills.forEach(armorSkills => {
+                        if (searchVal.name === armorSkills.skillName) {
+                              filteredResults.push({
+                                    name: armor.name,
+                                    type: armor.type,
+                                    skills: armor.skills,
+                              });
+                        }
                   });
-            }
-            return filteredResults;
-      });
+            });
+      }
+
+      console.log(filteredResults)
 
       const assembledArmorResults = assembleArmor(
-            searchResults,
+            filteredResults,
             selectedValuesFiltered
       );
       return assembledArmorResults;
 };
 
-const assembleArmor = (searchResults, selectedValues) => {
-      const passedArmor = searchResults.then(searchResults => {
-            const classifiedArmor = classifyArmor(searchResults);
+const assembleArmor = (filteredResults, selectedValues) => {
 
-            let passedArmor = [];
+      const classifiedArmor = classifyArmor(filteredResults);
 
-            classifiedArmor.head.forEach(headArmor => {
-                  classifiedArmor.chest.forEach(chestArmor => {
-                        classifiedArmor.gloves.forEach(glovesArmor => {
-                              classifiedArmor.waist.forEach(waistArmor => {
-                                    classifiedArmor.legs.forEach(legsArmor => {
-                                          let assembledArmor = {
-                                                headArmor,
-                                                chestArmor,
-                                                glovesArmor,
-                                                waistArmor,
-                                                legsArmor,
-                                          };
-                                          const goodArmor = compareIfPassed(
-                                                assembledArmor,
-                                                selectedValues
-                                          );
-                                          if (goodArmor !== null) {
-                                                passedArmor.push(goodArmor);
-                                          }
-                                    });
+      let passedArmor = [];
+
+      classifiedArmor.head.forEach(headArmor => {
+            classifiedArmor.chest.forEach(chestArmor => {
+                  classifiedArmor.gloves.forEach(glovesArmor => {
+                        classifiedArmor.waist.forEach(waistArmor => {
+                              classifiedArmor.legs.forEach(legsArmor => {
+                                    let assembledArmor = {
+                                          headArmor,
+                                          chestArmor,
+                                          glovesArmor,
+                                          waistArmor,
+                                          legsArmor,
+                                    };
+                                    const goodArmor = compareIfPassed(
+                                          assembledArmor,
+                                          selectedValues
+                                    );
+                                    if (goodArmor !== null) {
+                                          passedArmor.push(goodArmor);
+                                    }
                               });
                         });
                   });
             });
-            return passedArmor;
       });
-
       return passedArmor;
 };
 
