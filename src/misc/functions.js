@@ -45,12 +45,8 @@ export const searchFunction = (selectedValues, options, armorList) => {
             });
       }
 
-      console.log(filteredResults)
+      const assembledArmorResults = assembleArmor(filteredResults,selectedValuesFiltered)
 
-      const assembledArmorResults = assembleArmor(
-            filteredResults,
-            selectedValuesFiltered
-      );
       return assembledArmorResults;
 };
 
@@ -191,27 +187,24 @@ export const convertReadable = results => {
       }
 
       results.forEach((result, key) => {
-            if (key > 400) {
-                  return;
-            }
-
-            for (let key in result) {
-                  stringResults += `${result[key].type}: ${
-                        result[key].name
-                  } - `;
-
-                  result[key].skills.forEach(skills => {
-                        if (skills !== 'Any Skill') {
-                              stringResults += `${skills.skillName} ${
-                                    skills.level
-                              }, `;
-                        } else {
-                              stringResults += `Any Skill`;
-                        }
-                  });
+            if (key <= 400) {
+                  for (let key in result) {
+                        stringResults += `${result[key].type}: ${
+                              result[key].name
+                        } - `;
+                              for (let keySkill of result[key].skills) {
+                                    if (keySkill !== 'Any Skill') {
+                                          stringResults += `${keySkill.skillName} ${
+                                                keySkill.level
+                                          }, `;
+                                    } else {
+                                          stringResults += `Any Skill`;
+                                    }
+                              }
+                        stringResults += `\n`;
+                  }
                   stringResults += `\n`;
             }
-            stringResults += `\n`;
       });
       return stringResults;
 };

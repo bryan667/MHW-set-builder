@@ -43,22 +43,20 @@ class DropDownSkills extends Component {
             });
       };
 
-      searchButtonClick = () => {
-            if (this.state.selectedValues.length > 0) {
-                  this.setState({
-                        armorResultLoading: true,
-                  });
-                  const searchResults = searchFunction(
-                        this.state.selectedValues,
-                        this.state.options,
-                        this.state.armorList
-                  );
-                  const readable = convertReadable(searchResults);
+      searchButtonClick() {                 
+            this.setState({
+                  armorResultLoading: true,
+            });
+
+            setTimeout(()=>{
+                  const result = searchFunction(this.state.selectedValues,this.state.options,this.state.armorList)
+                  const readable = convertReadable(result)
+
                   this.setState({
                         armorResults: readable,
                         armorResultLoading: false,
-                  });
-            }
+                  })
+            }, 0)
       };
 
       render() {
@@ -88,9 +86,7 @@ class DropDownSkills extends Component {
                                           onChange={this.handleChange}
                                     />
                                     <Button
-                                          onClick={e =>
-                                                this.searchButtonClick(e)
-                                          }
+                                          onClick={this.searchButtonClick.bind(this)}
                                     >
                                           Search
                                     </Button>
