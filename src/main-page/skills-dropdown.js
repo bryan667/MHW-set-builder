@@ -22,7 +22,7 @@ class DropDownSkills extends Component {
             selectedValues: [],
             isLoading: true,
             armorResults: '',
-            armorResultLoading: false,
+            armorResultLoading: true,
             armorList: []
       };
 
@@ -30,10 +30,11 @@ class DropDownSkills extends Component {
             const  skillState = await fetchSkills()
             const armorState = await fetchArmor()
 
-             this.setState({
+            this.setState({
                   options: skillState,
                   isLoading: false,
-                  armorList: armorState
+                  armorList: armorState,
+                  armorResultLoading: false
             });
       }
 

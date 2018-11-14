@@ -1,0 +1,2340 @@
+[
+ {
+  "key": "poison-resistance-rank-1",
+  "text": "poison-resistance-rank-1",
+  "value": "poison-resistance-rank-1",
+  "level": 1,
+  "name": "Poison Resistance"
+ },
+ {
+  "key": "poison-resistance-rank-2",
+  "text": "poison-resistance-rank-2",
+  "value": "poison-resistance-rank-2",
+  "level": 2,
+  "name": "Poison Resistance"
+ },
+ {
+  "key": "poison-resistance-rank-3",
+  "text": "poison-resistance-rank-3",
+  "value": "poison-resistance-rank-3",
+  "level": 3,
+  "name": "Poison Resistance"
+ },
+ {
+  "key": "paralysis-resistance-rank-1",
+  "text": "paralysis-resistance-rank-1",
+  "value": "paralysis-resistance-rank-1",
+  "level": 1,
+  "name": "Paralysis Resistance"
+ },
+ {
+  "key": "paralysis-resistance-rank-2",
+  "text": "paralysis-resistance-rank-2",
+  "value": "paralysis-resistance-rank-2",
+  "level": 2,
+  "name": "Paralysis Resistance"
+ },
+ {
+  "key": "paralysis-resistance-rank-3",
+  "text": "paralysis-resistance-rank-3",
+  "value": "paralysis-resistance-rank-3",
+  "level": 3,
+  "name": "Paralysis Resistance"
+ },
+ {
+  "key": "sleep-resistance-rank-1",
+  "text": "sleep-resistance-rank-1",
+  "value": "sleep-resistance-rank-1",
+  "level": 1,
+  "name": "Sleep Resistance"
+ },
+ {
+  "key": "sleep-resistance-rank-2",
+  "text": "sleep-resistance-rank-2",
+  "value": "sleep-resistance-rank-2",
+  "level": 2,
+  "name": "Sleep Resistance"
+ },
+ {
+  "key": "sleep-resistance-rank-3",
+  "text": "sleep-resistance-rank-3",
+  "value": "sleep-resistance-rank-3",
+  "level": 3,
+  "name": "Sleep Resistance"
+ },
+ {
+  "key": "stun-resistance-rank-1",
+  "text": "stun-resistance-rank-1",
+  "value": "stun-resistance-rank-1",
+  "level": 1,
+  "name": "Stun Resistance"
+ },
+ {
+  "key": "stun-resistance-rank-2",
+  "text": "stun-resistance-rank-2",
+  "value": "stun-resistance-rank-2",
+  "level": 2,
+  "name": "Stun Resistance"
+ },
+ {
+  "key": "stun-resistance-rank-3",
+  "text": "stun-resistance-rank-3",
+  "value": "stun-resistance-rank-3",
+  "level": 3,
+  "name": "Stun Resistance"
+ },
+ {
+  "key": "muck-resistance-rank-1",
+  "text": "muck-resistance-rank-1",
+  "value": "muck-resistance-rank-1",
+  "level": 1,
+  "name": "Muck Resistance"
+ },
+ {
+  "key": "blast-resistance-rank-1",
+  "text": "blast-resistance-rank-1",
+  "value": "blast-resistance-rank-1",
+  "level": 1,
+  "name": "Blast Resistance"
+ },
+ {
+  "key": "blast-resistance-rank-2",
+  "text": "blast-resistance-rank-2",
+  "value": "blast-resistance-rank-2",
+  "level": 2,
+  "name": "Blast Resistance"
+ },
+ {
+  "key": "blast-resistance-rank-3",
+  "text": "blast-resistance-rank-3",
+  "value": "blast-resistance-rank-3",
+  "level": 3,
+  "name": "Blast Resistance"
+ },
+ {
+  "key": "bleeding-resistance-rank-1",
+  "text": "bleeding-resistance-rank-1",
+  "value": "bleeding-resistance-rank-1",
+  "level": 1,
+  "name": "Bleeding Resistance"
+ },
+ {
+  "key": "bleeding-resistance-rank-2",
+  "text": "bleeding-resistance-rank-2",
+  "value": "bleeding-resistance-rank-2",
+  "level": 2,
+  "name": "Bleeding Resistance"
+ },
+ {
+  "key": "bleeding-resistance-rank-3",
+  "text": "bleeding-resistance-rank-3",
+  "value": "bleeding-resistance-rank-3",
+  "level": 3,
+  "name": "Bleeding Resistance"
+ },
+ {
+  "key": "iron-skin-rank-1",
+  "text": "iron-skin-rank-1",
+  "value": "iron-skin-rank-1",
+  "level": 1,
+  "name": "Iron Skin"
+ },
+ {
+  "key": "iron-skin-rank-2",
+  "text": "iron-skin-rank-2",
+  "value": "iron-skin-rank-2",
+  "level": 2,
+  "name": "Iron Skin"
+ },
+ {
+  "key": "iron-skin-rank-3",
+  "text": "iron-skin-rank-3",
+  "value": "iron-skin-rank-3",
+  "level": 3,
+  "name": "Iron Skin"
+ },
+ {
+  "key": "earplugs-rank-1",
+  "text": "earplugs-rank-1",
+  "value": "earplugs-rank-1",
+  "level": 1,
+  "name": "Earplugs"
+ },
+ {
+  "key": "earplugs-rank-2",
+  "text": "earplugs-rank-2",
+  "value": "earplugs-rank-2",
+  "level": 2,
+  "name": "Earplugs"
+ },
+ {
+  "key": "earplugs-rank-3",
+  "text": "earplugs-rank-3",
+  "value": "earplugs-rank-3",
+  "level": 3,
+  "name": "Earplugs"
+ },
+ {
+  "key": "earplugs-rank-4",
+  "text": "earplugs-rank-4",
+  "value": "earplugs-rank-4",
+  "level": 4,
+  "name": "Earplugs"
+ },
+ {
+  "key": "earplugs-rank-5",
+  "text": "earplugs-rank-5",
+  "value": "earplugs-rank-5",
+  "level": 5,
+  "name": "Earplugs"
+ },
+ {
+  "key": "windproof-rank-1",
+  "text": "windproof-rank-1",
+  "value": "windproof-rank-1",
+  "level": 1,
+  "name": "Windproof"
+ },
+ {
+  "key": "windproof-rank-2",
+  "text": "windproof-rank-2",
+  "value": "windproof-rank-2",
+  "level": 2,
+  "name": "Windproof"
+ },
+ {
+  "key": "windproof-rank-3",
+  "text": "windproof-rank-3",
+  "value": "windproof-rank-3",
+  "level": 3,
+  "name": "Windproof"
+ },
+ {
+  "key": "windproof-rank-4",
+  "text": "windproof-rank-4",
+  "value": "windproof-rank-4",
+  "level": 4,
+  "name": "Windproof"
+ },
+ {
+  "key": "windproof-rank-5",
+  "text": "windproof-rank-5",
+  "value": "windproof-rank-5",
+  "level": 5,
+  "name": "Windproof"
+ },
+ {
+  "key": "tremor-resistance-rank-1",
+  "text": "tremor-resistance-rank-1",
+  "value": "tremor-resistance-rank-1",
+  "level": 1,
+  "name": "Tremor Resistance"
+ },
+ {
+  "key": "tremor-resistance-rank-2",
+  "text": "tremor-resistance-rank-2",
+  "value": "tremor-resistance-rank-2",
+  "level": 2,
+  "name": "Tremor Resistance"
+ },
+ {
+  "key": "tremor-resistance-rank-3",
+  "text": "tremor-resistance-rank-3",
+  "value": "tremor-resistance-rank-3",
+  "level": 3,
+  "name": "Tremor Resistance"
+ },
+ {
+  "key": "dungmaster-rank-1",
+  "text": "dungmaster-rank-1",
+  "value": "dungmaster-rank-1",
+  "level": 1,
+  "name": "Dungmaster"
+ },
+ {
+  "key": "effluvial-expert-rank-1",
+  "text": "effluvial-expert-rank-1",
+  "value": "effluvial-expert-rank-1",
+  "level": 1,
+  "name": "Effluvial Expert"
+ },
+ {
+  "key": "heat-guard-rank-1",
+  "text": "heat-guard-rank-1",
+  "value": "heat-guard-rank-1",
+  "level": 1,
+  "name": "Heat Guard"
+ },
+ {
+  "key": "attack-boost-rank-1",
+  "text": "attack-boost-rank-1",
+  "value": "attack-boost-rank-1",
+  "level": 1,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "attack-boost-rank-2",
+  "text": "attack-boost-rank-2",
+  "value": "attack-boost-rank-2",
+  "level": 2,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "attack-boost-rank-3",
+  "text": "attack-boost-rank-3",
+  "value": "attack-boost-rank-3",
+  "level": 3,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "attack-boost-rank-4",
+  "text": "attack-boost-rank-4",
+  "value": "attack-boost-rank-4",
+  "level": 4,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "attack-boost-rank-5",
+  "text": "attack-boost-rank-5",
+  "value": "attack-boost-rank-5",
+  "level": 5,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "attack-boost-rank-6",
+  "text": "attack-boost-rank-6",
+  "value": "attack-boost-rank-6",
+  "level": 6,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "attack-boost-rank-7",
+  "text": "attack-boost-rank-7",
+  "value": "attack-boost-rank-7",
+  "level": 7,
+  "name": "Attack Boost"
+ },
+ {
+  "key": "defense-boost-rank-1",
+  "text": "defense-boost-rank-1",
+  "value": "defense-boost-rank-1",
+  "level": 1,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "defense-boost-rank-2",
+  "text": "defense-boost-rank-2",
+  "value": "defense-boost-rank-2",
+  "level": 2,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "defense-boost-rank-3",
+  "text": "defense-boost-rank-3",
+  "value": "defense-boost-rank-3",
+  "level": 3,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "defense-boost-rank-4",
+  "text": "defense-boost-rank-4",
+  "value": "defense-boost-rank-4",
+  "level": 4,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "defense-boost-rank-5",
+  "text": "defense-boost-rank-5",
+  "value": "defense-boost-rank-5",
+  "level": 5,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "defense-boost-rank-6",
+  "text": "defense-boost-rank-6",
+  "value": "defense-boost-rank-6",
+  "level": 6,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "defense-boost-rank-7",
+  "text": "defense-boost-rank-7",
+  "value": "defense-boost-rank-7",
+  "level": 7,
+  "name": "Defense Boost"
+ },
+ {
+  "key": "health-boost-rank-1",
+  "text": "health-boost-rank-1",
+  "value": "health-boost-rank-1",
+  "level": 1,
+  "name": "Health Boost"
+ },
+ {
+  "key": "health-boost-rank-2",
+  "text": "health-boost-rank-2",
+  "value": "health-boost-rank-2",
+  "level": 2,
+  "name": "Health Boost"
+ },
+ {
+  "key": "health-boost-rank-3",
+  "text": "health-boost-rank-3",
+  "value": "health-boost-rank-3",
+  "level": 3,
+  "name": "Health Boost"
+ },
+ {
+  "key": "recovery-up-rank-1",
+  "text": "recovery-up-rank-1",
+  "value": "recovery-up-rank-1",
+  "level": 1,
+  "name": "Recovery Up"
+ },
+ {
+  "key": "recovery-up-rank-2",
+  "text": "recovery-up-rank-2",
+  "value": "recovery-up-rank-2",
+  "level": 2,
+  "name": "Recovery Up"
+ },
+ {
+  "key": "recovery-up-rank-3",
+  "text": "recovery-up-rank-3",
+  "value": "recovery-up-rank-3",
+  "level": 3,
+  "name": "Recovery Up"
+ },
+ {
+  "key": "recovery-speed-rank-1",
+  "text": "recovery-speed-rank-1",
+  "value": "recovery-speed-rank-1",
+  "level": 1,
+  "name": "Recovery Speed"
+ },
+ {
+  "key": "recovery-speed-rank-2",
+  "text": "recovery-speed-rank-2",
+  "value": "recovery-speed-rank-2",
+  "level": 2,
+  "name": "Recovery Speed"
+ },
+ {
+  "key": "recovery-speed-rank-3",
+  "text": "recovery-speed-rank-3",
+  "value": "recovery-speed-rank-3",
+  "level": 3,
+  "name": "Recovery Speed"
+ },
+ {
+  "key": "fire-resistance-rank-1",
+  "text": "fire-resistance-rank-1",
+  "value": "fire-resistance-rank-1",
+  "level": 1,
+  "name": "Fire Resistance"
+ },
+ {
+  "key": "fire-resistance-rank-2",
+  "text": "fire-resistance-rank-2",
+  "value": "fire-resistance-rank-2",
+  "level": 2,
+  "name": "Fire Resistance"
+ },
+ {
+  "key": "fire-resistance-rank-3",
+  "text": "fire-resistance-rank-3",
+  "value": "fire-resistance-rank-3",
+  "level": 3,
+  "name": "Fire Resistance"
+ },
+ {
+  "key": "water-resistance-rank-1",
+  "text": "water-resistance-rank-1",
+  "value": "water-resistance-rank-1",
+  "level": 1,
+  "name": "Water Resistance"
+ },
+ {
+  "key": "water-resistance-rank-2",
+  "text": "water-resistance-rank-2",
+  "value": "water-resistance-rank-2",
+  "level": 2,
+  "name": "Water Resistance"
+ },
+ {
+  "key": "water-resistance-rank-3",
+  "text": "water-resistance-rank-3",
+  "value": "water-resistance-rank-3",
+  "level": 3,
+  "name": "Water Resistance"
+ },
+ {
+  "key": "ice-resistance-rank-1",
+  "text": "ice-resistance-rank-1",
+  "value": "ice-resistance-rank-1",
+  "level": 1,
+  "name": "Ice Resistance"
+ },
+ {
+  "key": "ice-resistance-rank-2",
+  "text": "ice-resistance-rank-2",
+  "value": "ice-resistance-rank-2",
+  "level": 2,
+  "name": "Ice Resistance"
+ },
+ {
+  "key": "ice-resistance-rank-3",
+  "text": "ice-resistance-rank-3",
+  "value": "ice-resistance-rank-3",
+  "level": 3,
+  "name": "Ice Resistance"
+ },
+ {
+  "key": "thunder-resistance-rank-1",
+  "text": "thunder-resistance-rank-1",
+  "value": "thunder-resistance-rank-1",
+  "level": 1,
+  "name": "Thunder Resistance"
+ },
+ {
+  "key": "thunder-resistance-rank-2",
+  "text": "thunder-resistance-rank-2",
+  "value": "thunder-resistance-rank-2",
+  "level": 2,
+  "name": "Thunder Resistance"
+ },
+ {
+  "key": "thunder-resistance-rank-3",
+  "text": "thunder-resistance-rank-3",
+  "value": "thunder-resistance-rank-3",
+  "level": 3,
+  "name": "Thunder Resistance"
+ },
+ {
+  "key": "dragon-resistance-rank-1",
+  "text": "dragon-resistance-rank-1",
+  "value": "dragon-resistance-rank-1",
+  "level": 1,
+  "name": "Dragon Resistance"
+ },
+ {
+  "key": "dragon-resistance-rank-2",
+  "text": "dragon-resistance-rank-2",
+  "value": "dragon-resistance-rank-2",
+  "level": 2,
+  "name": "Dragon Resistance"
+ },
+ {
+  "key": "dragon-resistance-rank-3",
+  "text": "dragon-resistance-rank-3",
+  "value": "dragon-resistance-rank-3",
+  "level": 3,
+  "name": "Dragon Resistance"
+ },
+ {
+  "key": "blight-resistance-rank-1",
+  "text": "blight-resistance-rank-1",
+  "value": "blight-resistance-rank-1",
+  "level": 1,
+  "name": "Blight Resistance"
+ },
+ {
+  "key": "blight-resistance-rank-2",
+  "text": "blight-resistance-rank-2",
+  "value": "blight-resistance-rank-2",
+  "level": 2,
+  "name": "Blight Resistance"
+ },
+ {
+  "key": "blight-resistance-rank-3",
+  "text": "blight-resistance-rank-3",
+  "value": "blight-resistance-rank-3",
+  "level": 3,
+  "name": "Blight Resistance"
+ },
+ {
+  "key": "fire-attack-rank-1",
+  "text": "fire-attack-rank-1",
+  "value": "fire-attack-rank-1",
+  "level": 1,
+  "name": "Fire Attack"
+ },
+ {
+  "key": "fire-attack-rank-2",
+  "text": "fire-attack-rank-2",
+  "value": "fire-attack-rank-2",
+  "level": 2,
+  "name": "Fire Attack"
+ },
+ {
+  "key": "fire-attack-rank-3",
+  "text": "fire-attack-rank-3",
+  "value": "fire-attack-rank-3",
+  "level": 3,
+  "name": "Fire Attack"
+ },
+ {
+  "key": "fire-attack-rank-4",
+  "text": "fire-attack-rank-4",
+  "value": "fire-attack-rank-4",
+  "level": 4,
+  "name": "Fire Attack"
+ },
+ {
+  "key": "fire-attack-rank-5",
+  "text": "fire-attack-rank-5",
+  "value": "fire-attack-rank-5",
+  "level": 5,
+  "name": "Fire Attack"
+ },
+ {
+  "key": "water-attack-rank-1",
+  "text": "water-attack-rank-1",
+  "value": "water-attack-rank-1",
+  "level": 1,
+  "name": "Water Attack"
+ },
+ {
+  "key": "water-attack-rank-2",
+  "text": "water-attack-rank-2",
+  "value": "water-attack-rank-2",
+  "level": 2,
+  "name": "Water Attack"
+ },
+ {
+  "key": "water-attack-rank-3",
+  "text": "water-attack-rank-3",
+  "value": "water-attack-rank-3",
+  "level": 3,
+  "name": "Water Attack"
+ },
+ {
+  "key": "water-attack-rank-4",
+  "text": "water-attack-rank-4",
+  "value": "water-attack-rank-4",
+  "level": 4,
+  "name": "Water Attack"
+ },
+ {
+  "key": "water-attack-rank-5",
+  "text": "water-attack-rank-5",
+  "value": "water-attack-rank-5",
+  "level": 5,
+  "name": "Water Attack"
+ },
+ {
+  "key": "ice-attack-rank-1",
+  "text": "ice-attack-rank-1",
+  "value": "ice-attack-rank-1",
+  "level": 1,
+  "name": "Ice Attack"
+ },
+ {
+  "key": "ice-attack-rank-2",
+  "text": "ice-attack-rank-2",
+  "value": "ice-attack-rank-2",
+  "level": 2,
+  "name": "Ice Attack"
+ },
+ {
+  "key": "ice-attack-rank-3",
+  "text": "ice-attack-rank-3",
+  "value": "ice-attack-rank-3",
+  "level": 3,
+  "name": "Ice Attack"
+ },
+ {
+  "key": "ice-attack-rank-4",
+  "text": "ice-attack-rank-4",
+  "value": "ice-attack-rank-4",
+  "level": 4,
+  "name": "Ice Attack"
+ },
+ {
+  "key": "ice-attack-rank-5",
+  "text": "ice-attack-rank-5",
+  "value": "ice-attack-rank-5",
+  "level": 5,
+  "name": "Ice Attack"
+ },
+ {
+  "key": "thunder-attack-rank-1",
+  "text": "thunder-attack-rank-1",
+  "value": "thunder-attack-rank-1",
+  "level": 1,
+  "name": "Thunder Attack"
+ },
+ {
+  "key": "thunder-attack-rank-2",
+  "text": "thunder-attack-rank-2",
+  "value": "thunder-attack-rank-2",
+  "level": 2,
+  "name": "Thunder Attack"
+ },
+ {
+  "key": "thunder-attack-rank-3",
+  "text": "thunder-attack-rank-3",
+  "value": "thunder-attack-rank-3",
+  "level": 3,
+  "name": "Thunder Attack"
+ },
+ {
+  "key": "thunder-attack-rank-4",
+  "text": "thunder-attack-rank-4",
+  "value": "thunder-attack-rank-4",
+  "level": 4,
+  "name": "Thunder Attack"
+ },
+ {
+  "key": "thunder-attack-rank-5",
+  "text": "thunder-attack-rank-5",
+  "value": "thunder-attack-rank-5",
+  "level": 5,
+  "name": "Thunder Attack"
+ },
+ {
+  "key": "dragon-attack-rank-1",
+  "text": "dragon-attack-rank-1",
+  "value": "dragon-attack-rank-1",
+  "level": 1,
+  "name": "Dragon Attack"
+ },
+ {
+  "key": "dragon-attack-rank-2",
+  "text": "dragon-attack-rank-2",
+  "value": "dragon-attack-rank-2",
+  "level": 2,
+  "name": "Dragon Attack"
+ },
+ {
+  "key": "dragon-attack-rank-3",
+  "text": "dragon-attack-rank-3",
+  "value": "dragon-attack-rank-3",
+  "level": 3,
+  "name": "Dragon Attack"
+ },
+ {
+  "key": "dragon-attack-rank-4",
+  "text": "dragon-attack-rank-4",
+  "value": "dragon-attack-rank-4",
+  "level": 4,
+  "name": "Dragon Attack"
+ },
+ {
+  "key": "dragon-attack-rank-5",
+  "text": "dragon-attack-rank-5",
+  "value": "dragon-attack-rank-5",
+  "level": 5,
+  "name": "Dragon Attack"
+ },
+ {
+  "key": "poison-attack-rank-1",
+  "text": "poison-attack-rank-1",
+  "value": "poison-attack-rank-1",
+  "level": 1,
+  "name": "Poison Attack"
+ },
+ {
+  "key": "poison-attack-rank-2",
+  "text": "poison-attack-rank-2",
+  "value": "poison-attack-rank-2",
+  "level": 2,
+  "name": "Poison Attack"
+ },
+ {
+  "key": "poison-attack-rank-3",
+  "text": "poison-attack-rank-3",
+  "value": "poison-attack-rank-3",
+  "level": 3,
+  "name": "Poison Attack"
+ },
+ {
+  "key": "paralysis-attack-rank-1",
+  "text": "paralysis-attack-rank-1",
+  "value": "paralysis-attack-rank-1",
+  "level": 1,
+  "name": "Paralysis Attack"
+ },
+ {
+  "key": "paralysis-attack-rank-2",
+  "text": "paralysis-attack-rank-2",
+  "value": "paralysis-attack-rank-2",
+  "level": 2,
+  "name": "Paralysis Attack"
+ },
+ {
+  "key": "paralysis-attack-rank-3",
+  "text": "paralysis-attack-rank-3",
+  "value": "paralysis-attack-rank-3",
+  "level": 3,
+  "name": "Paralysis Attack"
+ },
+ {
+  "key": "sleep-attack-rank-1",
+  "text": "sleep-attack-rank-1",
+  "value": "sleep-attack-rank-1",
+  "level": 1,
+  "name": "Sleep Attack"
+ },
+ {
+  "key": "sleep-attack-rank-2",
+  "text": "sleep-attack-rank-2",
+  "value": "sleep-attack-rank-2",
+  "level": 2,
+  "name": "Sleep Attack"
+ },
+ {
+  "key": "sleep-attack-rank-3",
+  "text": "sleep-attack-rank-3",
+  "value": "sleep-attack-rank-3",
+  "level": 3,
+  "name": "Sleep Attack"
+ },
+ {
+  "key": "blast-attack-rank-1",
+  "text": "blast-attack-rank-1",
+  "value": "blast-attack-rank-1",
+  "level": 1,
+  "name": "Blast Attack"
+ },
+ {
+  "key": "blast-attack-rank-2",
+  "text": "blast-attack-rank-2",
+  "value": "blast-attack-rank-2",
+  "level": 2,
+  "name": "Blast Attack"
+ },
+ {
+  "key": "blast-attack-rank-3",
+  "text": "blast-attack-rank-3",
+  "value": "blast-attack-rank-3",
+  "level": 3,
+  "name": "Blast Attack"
+ },
+ {
+  "key": "normal-shots-rank-1",
+  "text": "normal-shots-rank-1",
+  "value": "normal-shots-rank-1",
+  "level": 1,
+  "name": "Normal Shots"
+ },
+ {
+  "key": "piercing-shots-rank-1",
+  "text": "piercing-shots-rank-1",
+  "value": "piercing-shots-rank-1",
+  "level": 1,
+  "name": "Piercing Shots"
+ },
+ {
+  "key": "spread/power-shots-rank-1",
+  "text": "spread/power-shots-rank-1",
+  "value": "spread/power-shots-rank-1",
+  "level": 1,
+  "name": "Spread/Power Shots"
+ },
+ {
+  "key": "free-elem/ammo-up-rank-1",
+  "text": "free-elem/ammo-up-rank-1",
+  "value": "free-elem/ammo-up-rank-1",
+  "level": 1,
+  "name": "Free Elem/Ammo Up"
+ },
+ {
+  "key": "free-elem/ammo-up-rank-2",
+  "text": "free-elem/ammo-up-rank-2",
+  "value": "free-elem/ammo-up-rank-2",
+  "level": 2,
+  "name": "Free Elem/Ammo Up"
+ },
+ {
+  "key": "free-elem/ammo-up-rank-3",
+  "text": "free-elem/ammo-up-rank-3",
+  "value": "free-elem/ammo-up-rank-3",
+  "level": 3,
+  "name": "Free Elem/Ammo Up"
+ },
+ {
+  "key": "critical-eye-rank-1",
+  "text": "critical-eye-rank-1",
+  "value": "critical-eye-rank-1",
+  "level": 1,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-eye-rank-2",
+  "text": "critical-eye-rank-2",
+  "value": "critical-eye-rank-2",
+  "level": 2,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-eye-rank-3",
+  "text": "critical-eye-rank-3",
+  "value": "critical-eye-rank-3",
+  "level": 3,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-eye-rank-4",
+  "text": "critical-eye-rank-4",
+  "value": "critical-eye-rank-4",
+  "level": 4,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-eye-rank-5",
+  "text": "critical-eye-rank-5",
+  "value": "critical-eye-rank-5",
+  "level": 5,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-eye-rank-6",
+  "text": "critical-eye-rank-6",
+  "value": "critical-eye-rank-6",
+  "level": 6,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-eye-rank-7",
+  "text": "critical-eye-rank-7",
+  "value": "critical-eye-rank-7",
+  "level": 7,
+  "name": "Critical Eye"
+ },
+ {
+  "key": "critical-boost-rank-1",
+  "text": "critical-boost-rank-1",
+  "value": "critical-boost-rank-1",
+  "level": 1,
+  "name": "Critical Boost"
+ },
+ {
+  "key": "critical-boost-rank-2",
+  "text": "critical-boost-rank-2",
+  "value": "critical-boost-rank-2",
+  "level": 2,
+  "name": "Critical Boost"
+ },
+ {
+  "key": "critical-boost-rank-3",
+  "text": "critical-boost-rank-3",
+  "value": "critical-boost-rank-3",
+  "level": 3,
+  "name": "Critical Boost"
+ },
+ {
+  "key": "weakness-exploit-rank-1",
+  "text": "weakness-exploit-rank-1",
+  "value": "weakness-exploit-rank-1",
+  "level": 1,
+  "name": "Weakness Exploit"
+ },
+ {
+  "key": "weakness-exploit-rank-2",
+  "text": "weakness-exploit-rank-2",
+  "value": "weakness-exploit-rank-2",
+  "level": 2,
+  "name": "Weakness Exploit"
+ },
+ {
+  "key": "weakness-exploit-rank-3",
+  "text": "weakness-exploit-rank-3",
+  "value": "weakness-exploit-rank-3",
+  "level": 3,
+  "name": "Weakness Exploit"
+ },
+ {
+  "key": "focus-rank-1",
+  "text": "focus-rank-1",
+  "value": "focus-rank-1",
+  "level": 1,
+  "name": "Focus"
+ },
+ {
+  "key": "focus-rank-2",
+  "text": "focus-rank-2",
+  "value": "focus-rank-2",
+  "level": 2,
+  "name": "Focus"
+ },
+ {
+  "key": "focus-rank-3",
+  "text": "focus-rank-3",
+  "value": "focus-rank-3",
+  "level": 3,
+  "name": "Focus"
+ },
+ {
+  "key": "power-prolonger-rank-1",
+  "text": "power-prolonger-rank-1",
+  "value": "power-prolonger-rank-1",
+  "level": 1,
+  "name": "Power Prolonger"
+ },
+ {
+  "key": "power-prolonger-rank-2",
+  "text": "power-prolonger-rank-2",
+  "value": "power-prolonger-rank-2",
+  "level": 2,
+  "name": "Power Prolonger"
+ },
+ {
+  "key": "power-prolonger-rank-3",
+  "text": "power-prolonger-rank-3",
+  "value": "power-prolonger-rank-3",
+  "level": 3,
+  "name": "Power Prolonger"
+ },
+ {
+  "key": "handicraft-rank-1",
+  "text": "handicraft-rank-1",
+  "value": "handicraft-rank-1",
+  "level": 1,
+  "name": "Handicraft"
+ },
+ {
+  "key": "handicraft-rank-2",
+  "text": "handicraft-rank-2",
+  "value": "handicraft-rank-2",
+  "level": 2,
+  "name": "Handicraft"
+ },
+ {
+  "key": "handicraft-rank-3",
+  "text": "handicraft-rank-3",
+  "value": "handicraft-rank-3",
+  "level": 3,
+  "name": "Handicraft"
+ },
+ {
+  "key": "handicraft-rank-4",
+  "text": "handicraft-rank-4",
+  "value": "handicraft-rank-4",
+  "level": 4,
+  "name": "Handicraft"
+ },
+ {
+  "key": "handicraft-rank-5",
+  "text": "handicraft-rank-5",
+  "value": "handicraft-rank-5",
+  "level": 5,
+  "name": "Handicraft"
+ },
+ {
+  "key": "critical-draw-rank-1",
+  "text": "critical-draw-rank-1",
+  "value": "critical-draw-rank-1",
+  "level": 1,
+  "name": "Critical Draw"
+ },
+ {
+  "key": "critical-draw-rank-2",
+  "text": "critical-draw-rank-2",
+  "value": "critical-draw-rank-2",
+  "level": 2,
+  "name": "Critical Draw"
+ },
+ {
+  "key": "critical-draw-rank-3",
+  "text": "critical-draw-rank-3",
+  "value": "critical-draw-rank-3",
+  "level": 3,
+  "name": "Critical Draw"
+ },
+ {
+  "key": "partbreaker-rank-1",
+  "text": "partbreaker-rank-1",
+  "value": "partbreaker-rank-1",
+  "level": 1,
+  "name": "Partbreaker"
+ },
+ {
+  "key": "partbreaker-rank-2",
+  "text": "partbreaker-rank-2",
+  "value": "partbreaker-rank-2",
+  "level": 2,
+  "name": "Partbreaker"
+ },
+ {
+  "key": "partbreaker-rank-3",
+  "text": "partbreaker-rank-3",
+  "value": "partbreaker-rank-3",
+  "level": 3,
+  "name": "Partbreaker"
+ },
+ {
+  "key": "slugger-rank-1",
+  "text": "slugger-rank-1",
+  "value": "slugger-rank-1",
+  "level": 1,
+  "name": "Slugger"
+ },
+ {
+  "key": "slugger-rank-2",
+  "text": "slugger-rank-2",
+  "value": "slugger-rank-2",
+  "level": 2,
+  "name": "Slugger"
+ },
+ {
+  "key": "slugger-rank-3",
+  "text": "slugger-rank-3",
+  "value": "slugger-rank-3",
+  "level": 3,
+  "name": "Slugger"
+ },
+ {
+  "key": "stamina-thief-rank-1",
+  "text": "stamina-thief-rank-1",
+  "value": "stamina-thief-rank-1",
+  "level": 1,
+  "name": "Stamina Thief"
+ },
+ {
+  "key": "stamina-thief-rank-2",
+  "text": "stamina-thief-rank-2",
+  "value": "stamina-thief-rank-2",
+  "level": 2,
+  "name": "Stamina Thief"
+ },
+ {
+  "key": "stamina-thief-rank-3",
+  "text": "stamina-thief-rank-3",
+  "value": "stamina-thief-rank-3",
+  "level": 3,
+  "name": "Stamina Thief"
+ },
+ {
+  "key": "master-mounter-rank-1",
+  "text": "master-mounter-rank-1",
+  "value": "master-mounter-rank-1",
+  "level": 1,
+  "name": "Master Mounter"
+ },
+ {
+  "key": "airborne-rank-1",
+  "text": "airborne-rank-1",
+  "value": "airborne-rank-1",
+  "level": 1,
+  "name": "Airborne"
+ },
+ {
+  "key": "latent-power-rank-1",
+  "text": "latent-power-rank-1",
+  "value": "latent-power-rank-1",
+  "level": 1,
+  "name": "Latent Power"
+ },
+ {
+  "key": "latent-power-rank-2",
+  "text": "latent-power-rank-2",
+  "value": "latent-power-rank-2",
+  "level": 2,
+  "name": "Latent Power"
+ },
+ {
+  "key": "latent-power-rank-3",
+  "text": "latent-power-rank-3",
+  "value": "latent-power-rank-3",
+  "level": 3,
+  "name": "Latent Power"
+ },
+ {
+  "key": "latent-power-rank-4",
+  "text": "latent-power-rank-4",
+  "value": "latent-power-rank-4",
+  "level": 4,
+  "name": "Latent Power"
+ },
+ {
+  "key": "latent-power-rank-5",
+  "text": "latent-power-rank-5",
+  "value": "latent-power-rank-5",
+  "level": 5,
+  "name": "Latent Power"
+ },
+ {
+  "key": "agitator-rank-1",
+  "text": "agitator-rank-1",
+  "value": "agitator-rank-1",
+  "level": 1,
+  "name": "Agitator"
+ },
+ {
+  "key": "agitator-rank-2",
+  "text": "agitator-rank-2",
+  "value": "agitator-rank-2",
+  "level": 2,
+  "name": "Agitator"
+ },
+ {
+  "key": "agitator-rank-3",
+  "text": "agitator-rank-3",
+  "value": "agitator-rank-3",
+  "level": 3,
+  "name": "Agitator"
+ },
+ {
+  "key": "agitator-rank-4",
+  "text": "agitator-rank-4",
+  "value": "agitator-rank-4",
+  "level": 4,
+  "name": "Agitator"
+ },
+ {
+  "key": "agitator-rank-5",
+  "text": "agitator-rank-5",
+  "value": "agitator-rank-5",
+  "level": 5,
+  "name": "Agitator"
+ },
+ {
+  "key": "peak-performance-rank-1",
+  "text": "peak-performance-rank-1",
+  "value": "peak-performance-rank-1",
+  "level": 1,
+  "name": "Peak Performance"
+ },
+ {
+  "key": "peak-performance-rank-2",
+  "text": "peak-performance-rank-2",
+  "value": "peak-performance-rank-2",
+  "level": 2,
+  "name": "Peak Performance"
+ },
+ {
+  "key": "peak-performance-rank-3",
+  "text": "peak-performance-rank-3",
+  "value": "peak-performance-rank-3",
+  "level": 3,
+  "name": "Peak Performance"
+ },
+ {
+  "key": "heroics-rank-1",
+  "text": "heroics-rank-1",
+  "value": "heroics-rank-1",
+  "level": 1,
+  "name": "Heroics"
+ },
+ {
+  "key": "heroics-rank-2",
+  "text": "heroics-rank-2",
+  "value": "heroics-rank-2",
+  "level": 2,
+  "name": "Heroics"
+ },
+ {
+  "key": "heroics-rank-3",
+  "text": "heroics-rank-3",
+  "value": "heroics-rank-3",
+  "level": 3,
+  "name": "Heroics"
+ },
+ {
+  "key": "heroics-rank-4",
+  "text": "heroics-rank-4",
+  "value": "heroics-rank-4",
+  "level": 4,
+  "name": "Heroics"
+ },
+ {
+  "key": "heroics-rank-5",
+  "text": "heroics-rank-5",
+  "value": "heroics-rank-5",
+  "level": 5,
+  "name": "Heroics"
+ },
+ {
+  "key": "fortify-rank-1",
+  "text": "fortify-rank-1",
+  "value": "fortify-rank-1",
+  "level": 1,
+  "name": "Fortify"
+ },
+ {
+  "key": "resentment-rank-1",
+  "text": "resentment-rank-1",
+  "value": "resentment-rank-1",
+  "level": 1,
+  "name": "Resentment"
+ },
+ {
+  "key": "resentment-rank-2",
+  "text": "resentment-rank-2",
+  "value": "resentment-rank-2",
+  "level": 2,
+  "name": "Resentment"
+ },
+ {
+  "key": "resentment-rank-3",
+  "text": "resentment-rank-3",
+  "value": "resentment-rank-3",
+  "level": 3,
+  "name": "Resentment"
+ },
+ {
+  "key": "resentment-rank-4",
+  "text": "resentment-rank-4",
+  "value": "resentment-rank-4",
+  "level": 4,
+  "name": "Resentment"
+ },
+ {
+  "key": "resentment-rank-5",
+  "text": "resentment-rank-5",
+  "value": "resentment-rank-5",
+  "level": 5,
+  "name": "Resentment"
+ },
+ {
+  "key": "resuscitate-rank-1",
+  "text": "resuscitate-rank-1",
+  "value": "resuscitate-rank-1",
+  "level": 1,
+  "name": "Resuscitate"
+ },
+ {
+  "key": "horn-maestro-rank-1",
+  "text": "horn-maestro-rank-1",
+  "value": "horn-maestro-rank-1",
+  "level": 1,
+  "name": "Horn Maestro"
+ },
+ {
+  "key": "capacity-boost-rank-1",
+  "text": "capacity-boost-rank-1",
+  "value": "capacity-boost-rank-1",
+  "level": 1,
+  "name": "Capacity Boost"
+ },
+ {
+  "key": "special-ammo-boost-rank-1",
+  "text": "special-ammo-boost-rank-1",
+  "value": "special-ammo-boost-rank-1",
+  "level": 1,
+  "name": "Special Ammo Boost"
+ },
+ {
+  "key": "special-ammo-boost-rank-2",
+  "text": "special-ammo-boost-rank-2",
+  "value": "special-ammo-boost-rank-2",
+  "level": 2,
+  "name": "Special Ammo Boost"
+ },
+ {
+  "key": "artillery-rank-1",
+  "text": "artillery-rank-1",
+  "value": "artillery-rank-1",
+  "level": 1,
+  "name": "Artillery"
+ },
+ {
+  "key": "artillery-rank-2",
+  "text": "artillery-rank-2",
+  "value": "artillery-rank-2",
+  "level": 2,
+  "name": "Artillery"
+ },
+ {
+  "key": "artillery-rank-3",
+  "text": "artillery-rank-3",
+  "value": "artillery-rank-3",
+  "level": 3,
+  "name": "Artillery"
+ },
+ {
+  "key": "heavy-artillery-rank-1",
+  "text": "heavy-artillery-rank-1",
+  "value": "heavy-artillery-rank-1",
+  "level": 1,
+  "name": "Heavy Artillery"
+ },
+ {
+  "key": "heavy-artillery-rank-2",
+  "text": "heavy-artillery-rank-2",
+  "value": "heavy-artillery-rank-2",
+  "level": 2,
+  "name": "Heavy Artillery"
+ },
+ {
+  "key": "marathon-runner-rank-1",
+  "text": "marathon-runner-rank-1",
+  "value": "marathon-runner-rank-1",
+  "level": 1,
+  "name": "Marathon Runner"
+ },
+ {
+  "key": "marathon-runner-rank-2",
+  "text": "marathon-runner-rank-2",
+  "value": "marathon-runner-rank-2",
+  "level": 2,
+  "name": "Marathon Runner"
+ },
+ {
+  "key": "marathon-runner-rank-3",
+  "text": "marathon-runner-rank-3",
+  "value": "marathon-runner-rank-3",
+  "level": 3,
+  "name": "Marathon Runner"
+ },
+ {
+  "key": "constitution-rank-1",
+  "text": "constitution-rank-1",
+  "value": "constitution-rank-1",
+  "level": 1,
+  "name": "Constitution"
+ },
+ {
+  "key": "constitution-rank-2",
+  "text": "constitution-rank-2",
+  "value": "constitution-rank-2",
+  "level": 2,
+  "name": "Constitution"
+ },
+ {
+  "key": "constitution-rank-3",
+  "text": "constitution-rank-3",
+  "value": "constitution-rank-3",
+  "level": 3,
+  "name": "Constitution"
+ },
+ {
+  "key": "constitution-rank-4",
+  "text": "constitution-rank-4",
+  "value": "constitution-rank-4",
+  "level": 4,
+  "name": "Constitution"
+ },
+ {
+  "key": "constitution-rank-5",
+  "text": "constitution-rank-5",
+  "value": "constitution-rank-5",
+  "level": 5,
+  "name": "Constitution"
+ },
+ {
+  "key": "leap-of-faith-rank-1",
+  "text": "leap-of-faith-rank-1",
+  "value": "leap-of-faith-rank-1",
+  "level": 1,
+  "name": "Leap of Faith"
+ },
+ {
+  "key": "stamina-surge-rank-1",
+  "text": "stamina-surge-rank-1",
+  "value": "stamina-surge-rank-1",
+  "level": 1,
+  "name": "Stamina Surge"
+ },
+ {
+  "key": "stamina-surge-rank-2",
+  "text": "stamina-surge-rank-2",
+  "value": "stamina-surge-rank-2",
+  "level": 2,
+  "name": "Stamina Surge"
+ },
+ {
+  "key": "stamina-surge-rank-3",
+  "text": "stamina-surge-rank-3",
+  "value": "stamina-surge-rank-3",
+  "level": 3,
+  "name": "Stamina Surge"
+ },
+ {
+  "key": "hunger-resistance-rank-1",
+  "text": "hunger-resistance-rank-1",
+  "value": "hunger-resistance-rank-1",
+  "level": 1,
+  "name": "Hunger Resistance"
+ },
+ {
+  "key": "hunger-resistance-rank-2",
+  "text": "hunger-resistance-rank-2",
+  "value": "hunger-resistance-rank-2",
+  "level": 2,
+  "name": "Hunger Resistance"
+ },
+ {
+  "key": "hunger-resistance-rank-3",
+  "text": "hunger-resistance-rank-3",
+  "value": "hunger-resistance-rank-3",
+  "level": 3,
+  "name": "Hunger Resistance"
+ },
+ {
+  "key": "evade-window-rank-1",
+  "text": "evade-window-rank-1",
+  "value": "evade-window-rank-1",
+  "level": 1,
+  "name": "Evade Window"
+ },
+ {
+  "key": "evade-window-rank-2",
+  "text": "evade-window-rank-2",
+  "value": "evade-window-rank-2",
+  "level": 2,
+  "name": "Evade Window"
+ },
+ {
+  "key": "evade-window-rank-3",
+  "text": "evade-window-rank-3",
+  "value": "evade-window-rank-3",
+  "level": 3,
+  "name": "Evade Window"
+ },
+ {
+  "key": "evade-window-rank-4",
+  "text": "evade-window-rank-4",
+  "value": "evade-window-rank-4",
+  "level": 4,
+  "name": "Evade Window"
+ },
+ {
+  "key": "evade-window-rank-5",
+  "text": "evade-window-rank-5",
+  "value": "evade-window-rank-5",
+  "level": 5,
+  "name": "Evade Window"
+ },
+ {
+  "key": "evade-extender-rank-1",
+  "text": "evade-extender-rank-1",
+  "value": "evade-extender-rank-1",
+  "level": 1,
+  "name": "Evade Extender"
+ },
+ {
+  "key": "evade-extender-rank-2",
+  "text": "evade-extender-rank-2",
+  "value": "evade-extender-rank-2",
+  "level": 2,
+  "name": "Evade Extender"
+ },
+ {
+  "key": "evade-extender-rank-3",
+  "text": "evade-extender-rank-3",
+  "value": "evade-extender-rank-3",
+  "level": 3,
+  "name": "Evade Extender"
+ },
+ {
+  "key": "guard-rank-1",
+  "text": "guard-rank-1",
+  "value": "guard-rank-1",
+  "level": 1,
+  "name": "Guard"
+ },
+ {
+  "key": "guard-rank-2",
+  "text": "guard-rank-2",
+  "value": "guard-rank-2",
+  "level": 2,
+  "name": "Guard"
+ },
+ {
+  "key": "guard-rank-3",
+  "text": "guard-rank-3",
+  "value": "guard-rank-3",
+  "level": 3,
+  "name": "Guard"
+ },
+ {
+  "key": "guard-rank-4",
+  "text": "guard-rank-4",
+  "value": "guard-rank-4",
+  "level": 4,
+  "name": "Guard"
+ },
+ {
+  "key": "guard-rank-5",
+  "text": "guard-rank-5",
+  "value": "guard-rank-5",
+  "level": 5,
+  "name": "Guard"
+ },
+ {
+  "key": "quick-sheath-rank-1",
+  "text": "quick-sheath-rank-1",
+  "value": "quick-sheath-rank-1",
+  "level": 1,
+  "name": "Quick Sheath"
+ },
+ {
+  "key": "quick-sheath-rank-2",
+  "text": "quick-sheath-rank-2",
+  "value": "quick-sheath-rank-2",
+  "level": 2,
+  "name": "Quick Sheath"
+ },
+ {
+  "key": "quick-sheath-rank-3",
+  "text": "quick-sheath-rank-3",
+  "value": "quick-sheath-rank-3",
+  "level": 3,
+  "name": "Quick Sheath"
+ },
+ {
+  "key": "wide-range-rank-1",
+  "text": "wide-range-rank-1",
+  "value": "wide-range-rank-1",
+  "level": 1,
+  "name": "Wide-Range"
+ },
+ {
+  "key": "wide-range-rank-2",
+  "text": "wide-range-rank-2",
+  "value": "wide-range-rank-2",
+  "level": 2,
+  "name": "Wide-Range"
+ },
+ {
+  "key": "wide-range-rank-3",
+  "text": "wide-range-rank-3",
+  "value": "wide-range-rank-3",
+  "level": 3,
+  "name": "Wide-Range"
+ },
+ {
+  "key": "wide-range-rank-4",
+  "text": "wide-range-rank-4",
+  "value": "wide-range-rank-4",
+  "level": 4,
+  "name": "Wide-Range"
+ },
+ {
+  "key": "wide-range-rank-5",
+  "text": "wide-range-rank-5",
+  "value": "wide-range-rank-5",
+  "level": 5,
+  "name": "Wide-Range"
+ },
+ {
+  "key": "item-prolonger-rank-1",
+  "text": "item-prolonger-rank-1",
+  "value": "item-prolonger-rank-1",
+  "level": 1,
+  "name": "Item Prolonger"
+ },
+ {
+  "key": "item-prolonger-rank-2",
+  "text": "item-prolonger-rank-2",
+  "value": "item-prolonger-rank-2",
+  "level": 2,
+  "name": "Item Prolonger"
+ },
+ {
+  "key": "item-prolonger-rank-3",
+  "text": "item-prolonger-rank-3",
+  "value": "item-prolonger-rank-3",
+  "level": 3,
+  "name": "Item Prolonger"
+ },
+ {
+  "key": "free-meal-rank-1",
+  "text": "free-meal-rank-1",
+  "value": "free-meal-rank-1",
+  "level": 1,
+  "name": "Free Meal"
+ },
+ {
+  "key": "speed-eating-rank-1",
+  "text": "speed-eating-rank-1",
+  "value": "speed-eating-rank-1",
+  "level": 1,
+  "name": "Speed Eating"
+ },
+ {
+  "key": "speed-eating-rank-2",
+  "text": "speed-eating-rank-2",
+  "value": "speed-eating-rank-2",
+  "level": 2,
+  "name": "Speed Eating"
+ },
+ {
+  "key": "speed-eating-rank-3",
+  "text": "speed-eating-rank-3",
+  "value": "speed-eating-rank-3",
+  "level": 3,
+  "name": "Speed Eating"
+ },
+ {
+  "key": "speed-sharpening-rank-1",
+  "text": "speed-sharpening-rank-1",
+  "value": "speed-sharpening-rank-1",
+  "level": 1,
+  "name": "Speed Sharpening"
+ },
+ {
+  "key": "speed-sharpening-rank-2",
+  "text": "speed-sharpening-rank-2",
+  "value": "speed-sharpening-rank-2",
+  "level": 2,
+  "name": "Speed Sharpening"
+ },
+ {
+  "key": "speed-sharpening-rank-3",
+  "text": "speed-sharpening-rank-3",
+  "value": "speed-sharpening-rank-3",
+  "level": 3,
+  "name": "Speed Sharpening"
+ },
+ {
+  "key": "bombardier-rank-1",
+  "text": "bombardier-rank-1",
+  "value": "bombardier-rank-1",
+  "level": 1,
+  "name": "Bombardier"
+ },
+ {
+  "key": "bombardier-rank-2",
+  "text": "bombardier-rank-2",
+  "value": "bombardier-rank-2",
+  "level": 2,
+  "name": "Bombardier"
+ },
+ {
+  "key": "bombardier-rank-3",
+  "text": "bombardier-rank-3",
+  "value": "bombardier-rank-3",
+  "level": 3,
+  "name": "Bombardier"
+ },
+ {
+  "key": "mushroomancer-rank-1",
+  "text": "mushroomancer-rank-1",
+  "value": "mushroomancer-rank-1",
+  "level": 1,
+  "name": "Mushroomancer"
+ },
+ {
+  "key": "mushroomancer-rank-2",
+  "text": "mushroomancer-rank-2",
+  "value": "mushroomancer-rank-2",
+  "level": 2,
+  "name": "Mushroomancer"
+ },
+ {
+  "key": "mushroomancer-rank-3",
+  "text": "mushroomancer-rank-3",
+  "value": "mushroomancer-rank-3",
+  "level": 3,
+  "name": "Mushroomancer"
+ },
+ {
+  "key": "master-fisher-rank-1",
+  "text": "master-fisher-rank-1",
+  "value": "master-fisher-rank-1",
+  "level": 1,
+  "name": "Master Fisher"
+ },
+ {
+  "key": "pro-transporter-rank-1",
+  "text": "pro-transporter-rank-1",
+  "value": "pro-transporter-rank-1",
+  "level": 1,
+  "name": "Pro Transporter"
+ },
+ {
+  "key": "master-gatherer-rank-1",
+  "text": "master-gatherer-rank-1",
+  "value": "master-gatherer-rank-1",
+  "level": 1,
+  "name": "Master Gatherer"
+ },
+ {
+  "key": "honey-hunter-rank-1",
+  "text": "honey-hunter-rank-1",
+  "value": "honey-hunter-rank-1",
+  "level": 1,
+  "name": "Honey Hunter"
+ },
+ {
+  "key": "carving-pro-rank-1",
+  "text": "carving-pro-rank-1",
+  "value": "carving-pro-rank-1",
+  "level": 1,
+  "name": "Carving Pro"
+ },
+ {
+  "key": "divine-blessing-rank-1",
+  "text": "divine-blessing-rank-1",
+  "value": "divine-blessing-rank-1",
+  "level": 1,
+  "name": "Divine Blessing"
+ },
+ {
+  "key": "divine-blessing-rank-2",
+  "text": "divine-blessing-rank-2",
+  "value": "divine-blessing-rank-2",
+  "level": 2,
+  "name": "Divine Blessing"
+ },
+ {
+  "key": "divine-blessing-rank-3",
+  "text": "divine-blessing-rank-3",
+  "value": "divine-blessing-rank-3",
+  "level": 3,
+  "name": "Divine Blessing"
+ },
+ {
+  "key": "palico-rally-rank-1",
+  "text": "palico-rally-rank-1",
+  "value": "palico-rally-rank-1",
+  "level": 1,
+  "name": "Palico Rally"
+ },
+ {
+  "key": "palico-rally-rank-2",
+  "text": "palico-rally-rank-2",
+  "value": "palico-rally-rank-2",
+  "level": 2,
+  "name": "Palico Rally"
+ },
+ {
+  "key": "palico-rally-rank-3",
+  "text": "palico-rally-rank-3",
+  "value": "palico-rally-rank-3",
+  "level": 3,
+  "name": "Palico Rally"
+ },
+ {
+  "key": "palico-rally-rank-4",
+  "text": "palico-rally-rank-4",
+  "value": "palico-rally-rank-4",
+  "level": 4,
+  "name": "Palico Rally"
+ },
+ {
+  "key": "palico-rally-rank-5",
+  "text": "palico-rally-rank-5",
+  "value": "palico-rally-rank-5",
+  "level": 5,
+  "name": "Palico Rally"
+ },
+ {
+  "key": "botanist-rank-1",
+  "text": "botanist-rank-1",
+  "value": "botanist-rank-1",
+  "level": 1,
+  "name": "Botanist"
+ },
+ {
+  "key": "botanist-rank-2",
+  "text": "botanist-rank-2",
+  "value": "botanist-rank-2",
+  "level": 2,
+  "name": "Botanist"
+ },
+ {
+  "key": "botanist-rank-3",
+  "text": "botanist-rank-3",
+  "value": "botanist-rank-3",
+  "level": 3,
+  "name": "Botanist"
+ },
+ {
+  "key": "botanist-rank-4",
+  "text": "botanist-rank-4",
+  "value": "botanist-rank-4",
+  "level": 4,
+  "name": "Botanist"
+ },
+ {
+  "key": "geologist-rank-1",
+  "text": "geologist-rank-1",
+  "value": "geologist-rank-1",
+  "level": 1,
+  "name": "Geologist"
+ },
+ {
+  "key": "geologist-rank-2",
+  "text": "geologist-rank-2",
+  "value": "geologist-rank-2",
+  "level": 2,
+  "name": "Geologist"
+ },
+ {
+  "key": "geologist-rank-3",
+  "text": "geologist-rank-3",
+  "value": "geologist-rank-3",
+  "level": 3,
+  "name": "Geologist"
+ },
+ {
+  "key": "maximum-might-rank-1",
+  "text": "maximum-might-rank-1",
+  "value": "maximum-might-rank-1",
+  "level": 1,
+  "name": "Maximum Might"
+ },
+ {
+  "key": "maximum-might-rank-2",
+  "text": "maximum-might-rank-2",
+  "value": "maximum-might-rank-2",
+  "level": 2,
+  "name": "Maximum Might"
+ },
+ {
+  "key": "maximum-might-rank-3",
+  "text": "maximum-might-rank-3",
+  "value": "maximum-might-rank-3",
+  "level": 3,
+  "name": "Maximum Might"
+ },
+ {
+  "key": "slinger-capacity-rank-1",
+  "text": "slinger-capacity-rank-1",
+  "value": "slinger-capacity-rank-1",
+  "level": 1,
+  "name": "Slinger Capacity"
+ },
+ {
+  "key": "slinger-capacity-rank-2",
+  "text": "slinger-capacity-rank-2",
+  "value": "slinger-capacity-rank-2",
+  "level": 2,
+  "name": "Slinger Capacity"
+ },
+ {
+  "key": "slinger-capacity-rank-3",
+  "text": "slinger-capacity-rank-3",
+  "value": "slinger-capacity-rank-3",
+  "level": 3,
+  "name": "Slinger Capacity"
+ },
+ {
+  "key": "stealth-rank-1",
+  "text": "stealth-rank-1",
+  "value": "stealth-rank-1",
+  "level": 1,
+  "name": "Stealth"
+ },
+ {
+  "key": "stealth-rank-2",
+  "text": "stealth-rank-2",
+  "value": "stealth-rank-2",
+  "level": 2,
+  "name": "Stealth"
+ },
+ {
+  "key": "stealth-rank-3",
+  "text": "stealth-rank-3",
+  "value": "stealth-rank-3",
+  "level": 3,
+  "name": "Stealth"
+ },
+ {
+  "key": "flinch-free-rank-1",
+  "text": "flinch-free-rank-1",
+  "value": "flinch-free-rank-1",
+  "level": 1,
+  "name": "Flinch Free"
+ },
+ {
+  "key": "flinch-free-rank-2",
+  "text": "flinch-free-rank-2",
+  "value": "flinch-free-rank-2",
+  "level": 2,
+  "name": "Flinch Free"
+ },
+ {
+  "key": "flinch-free-rank-3",
+  "text": "flinch-free-rank-3",
+  "value": "flinch-free-rank-3",
+  "level": 3,
+  "name": "Flinch Free"
+ },
+ {
+  "key": "scoutfly-range-up-rank-1",
+  "text": "scoutfly-range-up-rank-1",
+  "value": "scoutfly-range-up-rank-1",
+  "level": 1,
+  "name": "Scoutfly Range Up"
+ },
+ {
+  "key": "speed-crawler-rank-1",
+  "text": "speed-crawler-rank-1",
+  "value": "speed-crawler-rank-1",
+  "level": 1,
+  "name": "Speed Crawler"
+ },
+ {
+  "key": "jump-master-rank-1",
+  "text": "jump-master-rank-1",
+  "value": "jump-master-rank-1",
+  "level": 1,
+  "name": "Jump Master"
+ },
+ {
+  "key": "sporepuff-expert-rank-1",
+  "text": "sporepuff-expert-rank-1",
+  "value": "sporepuff-expert-rank-1",
+  "level": 1,
+  "name": "Sporepuff Expert"
+ },
+ {
+  "key": "sporepuff-expert-rank-2",
+  "text": "sporepuff-expert-rank-2",
+  "value": "sporepuff-expert-rank-2",
+  "level": 2,
+  "name": "Sporepuff Expert"
+ },
+ {
+  "key": "sporepuff-expert-rank-3",
+  "text": "sporepuff-expert-rank-3",
+  "value": "sporepuff-expert-rank-3",
+  "level": 3,
+  "name": "Sporepuff Expert"
+ },
+ {
+  "key": "aquatic-expert-rank-1",
+  "text": "aquatic-expert-rank-1",
+  "value": "aquatic-expert-rank-1",
+  "level": 1,
+  "name": "Aquatic Expert"
+ },
+ {
+  "key": "aquatic-expert-rank-2",
+  "text": "aquatic-expert-rank-2",
+  "value": "aquatic-expert-rank-2",
+  "level": 2,
+  "name": "Aquatic Expert"
+ },
+ {
+  "key": "aquatic-expert-rank-3",
+  "text": "aquatic-expert-rank-3",
+  "value": "aquatic-expert-rank-3",
+  "level": 3,
+  "name": "Aquatic Expert"
+ },
+ {
+  "key": "cliffhanger-rank-1",
+  "text": "cliffhanger-rank-1",
+  "value": "cliffhanger-rank-1",
+  "level": 1,
+  "name": "Cliffhanger"
+ },
+ {
+  "key": "blindsider-rank-1",
+  "text": "blindsider-rank-1",
+  "value": "blindsider-rank-1",
+  "level": 1,
+  "name": "Blindsider"
+ },
+ {
+  "key": "scholar-rank-1",
+  "text": "scholar-rank-1",
+  "value": "scholar-rank-1",
+  "level": 1,
+  "name": "Scholar"
+ },
+ {
+  "key": "entomologist-rank-1",
+  "text": "entomologist-rank-1",
+  "value": "entomologist-rank-1",
+  "level": 1,
+  "name": "Entomologist"
+ },
+ {
+  "key": "entomologist-rank-2",
+  "text": "entomologist-rank-2",
+  "value": "entomologist-rank-2",
+  "level": 2,
+  "name": "Entomologist"
+ },
+ {
+  "key": "entomologist-rank-3",
+  "text": "entomologist-rank-3",
+  "value": "entomologist-rank-3",
+  "level": 3,
+  "name": "Entomologist"
+ },
+ {
+  "key": "effluvia-resistance-rank-1",
+  "text": "effluvia-resistance-rank-1",
+  "value": "effluvia-resistance-rank-1",
+  "level": 1,
+  "name": "Effluvia Resistance"
+ },
+ {
+  "key": "effluvia-resistance-rank-2",
+  "text": "effluvia-resistance-rank-2",
+  "value": "effluvia-resistance-rank-2",
+  "level": 2,
+  "name": "Effluvia Resistance"
+ },
+ {
+  "key": "effluvia-resistance-rank-3",
+  "text": "effluvia-resistance-rank-3",
+  "value": "effluvia-resistance-rank-3",
+  "level": 3,
+  "name": "Effluvia Resistance"
+ },
+ {
+  "key": "scenthound-rank-1",
+  "text": "scenthound-rank-1",
+  "value": "scenthound-rank-1",
+  "level": 1,
+  "name": "Scenthound"
+ },
+ {
+  "key": "foragers-luck-rank-1",
+  "text": "foragers-luck-rank-1",
+  "value": "foragers-luck-rank-1",
+  "level": 1,
+  "name": "Forager's Luck"
+ },
+ {
+  "key": "detector-rank-1",
+  "text": "detector-rank-1",
+  "value": "detector-rank-1",
+  "level": 1,
+  "name": "Detector"
+ },
+ {
+  "key": "bbq-master-rank-1",
+  "text": "bbq-master-rank-1",
+  "value": "bbq-master-rank-1",
+  "level": 1,
+  "name": "BBQ Master"
+ },
+ {
+  "key": "tool-specialist-rank-1",
+  "text": "tool-specialist-rank-1",
+  "value": "tool-specialist-rank-1",
+  "level": 1,
+  "name": "Tool Specialist"
+ },
+ {
+  "key": "tool-specialist-rank-2",
+  "text": "tool-specialist-rank-2",
+  "value": "tool-specialist-rank-2",
+  "level": 2,
+  "name": "Tool Specialist"
+ },
+ {
+  "key": "tool-specialist-rank-3",
+  "text": "tool-specialist-rank-3",
+  "value": "tool-specialist-rank-3",
+  "level": 3,
+  "name": "Tool Specialist"
+ },
+ {
+  "key": "affinity-sliding-rank-1",
+  "text": "affinity-sliding-rank-1",
+  "value": "affinity-sliding-rank-1",
+  "level": 1,
+  "name": "Affinity Sliding"
+ },
+ {
+  "key": "intimidator-rank-1",
+  "text": "intimidator-rank-1",
+  "value": "intimidator-rank-1",
+  "level": 1,
+  "name": "Intimidator"
+ },
+ {
+  "key": "intimidator-rank-2",
+  "text": "intimidator-rank-2",
+  "value": "intimidator-rank-2",
+  "level": 2,
+  "name": "Intimidator"
+ },
+ {
+  "key": "intimidator-rank-3",
+  "text": "intimidator-rank-3",
+  "value": "intimidator-rank-3",
+  "level": 3,
+  "name": "Intimidator"
+ },
+ {
+  "key": "hasten-recovery-rank-1",
+  "text": "hasten-recovery-rank-1",
+  "value": "hasten-recovery-rank-1",
+  "level": 1,
+  "name": "Hasten Recovery"
+ },
+ {
+  "key": "super-recovery-rank-1",
+  "text": "super-recovery-rank-1",
+  "value": "super-recovery-rank-1",
+  "level": 1,
+  "name": "Super Recovery"
+ },
+ {
+  "key": "poison-duration-up-rank-1",
+  "text": "poison-duration-up-rank-1",
+  "value": "poison-duration-up-rank-1",
+  "level": 1,
+  "name": "Poison Duration Up"
+ },
+ {
+  "key": "adrenaline-rank-1",
+  "text": "adrenaline-rank-1",
+  "value": "adrenaline-rank-1",
+  "level": 1,
+  "name": "Adrenaline"
+ },
+ {
+  "key": "stamina-cap-up-rank-1",
+  "text": "stamina-cap-up-rank-1",
+  "value": "stamina-cap-up-rank-1",
+  "level": 1,
+  "name": "Stamina Cap Up"
+ },
+ {
+  "key": "critical-element-rank-1",
+  "text": "critical-element-rank-1",
+  "value": "critical-element-rank-1",
+  "level": 1,
+  "name": "Critical Element"
+ },
+ {
+  "key": "minds-eye/ballistics-rank-1",
+  "text": "minds-eye/ballistics-rank-1",
+  "value": "minds-eye/ballistics-rank-1",
+  "level": 1,
+  "name": "Mind's Eye/Ballistics"
+ },
+ {
+  "key": "bludgeoner-rank-1",
+  "text": "bludgeoner-rank-1",
+  "value": "bludgeoner-rank-1",
+  "level": 1,
+  "name": "Bludgeoner"
+ },
+ {
+  "key": "non-elemental-boost-rank-1",
+  "text": "non-elemental-boost-rank-1",
+  "value": "non-elemental-boost-rank-1",
+  "level": 1,
+  "name": "Non-elemental Boost"
+ },
+ {
+  "key": "capture-master-rank-1",
+  "text": "capture-master-rank-1",
+  "value": "capture-master-rank-1",
+  "level": 1,
+  "name": "Capture Master"
+ },
+ {
+  "key": "guard-up-rank-1",
+  "text": "guard-up-rank-1",
+  "value": "guard-up-rank-1",
+  "level": 1,
+  "name": "Guard Up"
+ },
+ {
+  "key": "guts-rank-1",
+  "text": "guts-rank-1",
+  "value": "guts-rank-1",
+  "level": 1,
+  "name": "Guts"
+ },
+ {
+  "key": "masters-touch-rank-1",
+  "text": "masters-touch-rank-1",
+  "value": "masters-touch-rank-1",
+  "level": 1,
+  "name": "Master's Touch"
+ },
+ {
+  "key": "nullify-wind-pressure-rank-1",
+  "text": "nullify-wind-pressure-rank-1",
+  "value": "nullify-wind-pressure-rank-1",
+  "level": 1,
+  "name": "Nullify Wind Pressure"
+ },
+ {
+  "key": "razor-sharp/spare-shot-rank-1",
+  "text": "razor-sharp/spare-shot-rank-1",
+  "value": "razor-sharp/spare-shot-rank-1",
+  "level": 1,
+  "name": "Razor Sharp/Spare Shot"
+ },
+ {
+  "key": "critical-status-rank-1",
+  "text": "critical-status-rank-1",
+  "value": "critical-status-rank-1",
+  "level": 1,
+  "name": "Critical Status"
+ },
+ {
+  "key": "good-luck-rank-1",
+  "text": "good-luck-rank-1",
+  "value": "good-luck-rank-1",
+  "level": 1,
+  "name": "Good Luck"
+ },
+ {
+  "key": "bow-charge-plus-rank-1",
+  "text": "bow-charge-plus-rank-1",
+  "value": "bow-charge-plus-rank-1",
+  "level": 1,
+  "name": "Bow Charge Plus"
+ },
+ {
+  "key": "punishing-draw-rank-1",
+  "text": "punishing-draw-rank-1",
+  "value": "punishing-draw-rank-1",
+  "level": 1,
+  "name": "Punishing Draw"
+ },
+ {
+  "key": "protective-polish-rank-1",
+  "text": "protective-polish-rank-1",
+  "value": "protective-polish-rank-1",
+  "level": 1,
+  "name": "Protective Polish"
+ },
+ {
+  "key": "poison-functionality-rank-1",
+  "text": "poison-functionality-rank-1",
+  "value": "poison-functionality-rank-1",
+  "level": 1,
+  "name": "Poison Functionality"
+ },
+ {
+  "key": "para-functionality-rank-1",
+  "text": "para-functionality-rank-1",
+  "value": "para-functionality-rank-1",
+  "level": 1,
+  "name": "Para Functionality"
+ },
+ {
+  "key": "sleep-functionality-rank-1",
+  "text": "sleep-functionality-rank-1",
+  "value": "sleep-functionality-rank-1",
+  "level": 1,
+  "name": "Sleep Functionality"
+ },
+ {
+  "key": "blast-functionality-rank-1",
+  "text": "blast-functionality-rank-1",
+  "value": "blast-functionality-rank-1",
+  "level": 1,
+  "name": "Blast Functionality"
+ },
+ {
+  "key": "elderseal-boost-rank-1",
+  "text": "elderseal-boost-rank-1",
+  "value": "elderseal-boost-rank-1",
+  "level": 1,
+  "name": "Elderseal Boost"
+ },
+ {
+  "key": "great-luck-rank-1",
+  "text": "great-luck-rank-1",
+  "value": "great-luck-rank-1",
+  "level": 1,
+  "name": "Great Luck"
+ },
+ {
+  "key": "carving-master-rank-1",
+  "text": "carving-master-rank-1",
+  "value": "carving-master-rank-1",
+  "level": 1,
+  "name": "Carving Master"
+ }
+]

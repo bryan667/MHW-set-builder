@@ -213,29 +213,8 @@ export const fetchArmor = () => {
       const fetchedArmor = fetch('/api/armor')
             .then(res => res.json())
             .then(data => {
-                  let tempState = [];
-
-                  data.forEach((armor, keyArmor) => {
-                        tempState.push({
-                              name: armor.name,
-                              type: armor.type,
-                        });
-
-                        tempState[keyArmor].skills = [];
-
-                        armor.skills.forEach((skills, key) => {
-                              tempState[keyArmor].skills.push({
-                                    slug: skills.slug,
-                                    level: skills.level,
-                                    description: skills.description,
-                                    skillName: skills.skillName,
-                              });
-                        });
-                  });
-
-                  return tempState;
+                  return data;
             });
-
       return fetchedArmor;
 };
 
@@ -243,21 +222,7 @@ export const fetchSkills = () => {
       const fetchedSkills = fetch('/api/skills')
             .then(res => res.json())
             .then(data => {
-                  let tempState = [];
-
-                  data.forEach((skill, keySkill) => {
-                        skill.ranks.forEach((rank, key) => {
-                              tempState.push({
-                                    key: data[keySkill].ranks[key].slug,
-                                    text: data[keySkill].ranks[key].slug,
-                                    value: data[keySkill].ranks[key].slug,
-                                    level: data[keySkill].ranks[key].level,
-                                    name: data[keySkill].ranks[key].skillName,
-                              });
-                        });
-                  });
-
-                  return tempState;
+                  return data;
             });
       return fetchedSkills;
 };

@@ -21,32 +21,69 @@ app.listen(port, () => {
 //                    AXIOS                      //
 // ============================================= //
 
-if (fs.existsSync('./server/JSON/MHW-skills.txt') === false) {
+if (fs.existsSync('./server/JSON/MHW-skills.json') === false) {
       axios.get('https://mhw-db.com/skills')
             .then(Awyis => {
-                  fs.writeFile('./server/JSON/MHW-skills.txt', JSON.stringify(Awyis.data, null, 2), 
-                        err => {
-                              if (err) {console.log('cannot write MHW-skills file')}
-                              console.log('MHW-skills file has been created');
+                  let skillData = Awyis.data
+                  let tempState = [];
+
+                  skillData.forEach((skill, keySkill) => {
+                        skill.ranks.forEach((rank, key) => {
+                              tempState.push({
+                                    key: skillData[keySkill].ranks[key].slug,
+                                    text: skillData[keySkill].ranks[key].slug,
+                                    value: skillData[keySkill].ranks[key].slug,
+                                    level: skillData[keySkill].ranks[key].level,
+                                    name: skillData[keySkill].ranks[key].skillName,
+                              });
                         });
+                  });
+
+                  fs.writeFile('./server/JSON/MHW-skills.json', JSON.stringify(tempState, null, 1),
+                        err => {
+                              if (err) throw err
+                              console.log('MHW-skills file has been created');
+                  });
+
+
             })
             .catch(err => {
-                  return res.json({ error: err });
+                  console.log('unable to download skill json file: ', err);
             });
 }
 
-if (fs.existsSync('./server/JSON/MHW-armor.txt') === false) {
+if (fs.existsSync('./server/JSON/MHW-armor.json') === false) {
       axios.get('https://mhw-db.com/armor')
             .then(Awyis => {
-                  fs.writeFile('./server/JSON/MHW-armor.txt',JSON.stringify(Awyis.data, null, 2),
+                  let armorData = Awyis.data
+                  let tempState = [];
+
+                  armorData.forEach((armor, keyArmor) => {
+                        tempState.push({
+                              name: armor.name,
+                              type: armor.type,
+                        });
+
+                        tempState[keyArmor].skills = [];
+
+                        armor.skills.forEach((skills, key) => {
+                              tempState[keyArmor].skills.push({
+                                    slug: skills.slug,
+                                    level: skills.level,
+                                    description: skills.description,
+                                    skillName: skills.skillName,
+                              });
+                        });
+                  });
+
+                  fs.writeFile('./server/JSON/MHW-armor.json', JSON.stringify(tempState, null, 1),
                         err => {
-                              if (err) {console.log('cannot write MHW-skills file')}
+                              if (err) throw err
                               console.log('MHW-armor file has been created');
-                        }
-                  );
-            })
+                  })
+            })                  
             .catch(err => {
-                  return res.json({ error: err });
+                  console.log('unable to download armor json file: ', err);
             });
 }
 
@@ -59,7 +96,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/skills', (req, res) => {
-      fs.readFile('./server/JSON/MHW-skills.txt', (err, data) => {
+      fs.readFile('./server/JSON/MHW-skills.json', (err, data) => {
             if (err) throw res.json({ error: 'cannot read skills file' });
 
             let skillsData = JSON.parse(data);
@@ -68,7 +105,7 @@ app.get('/api/skills', (req, res) => {
 });
 
 app.get('/api/armor', (req, res) => {
-      fs.readFile('./server/JSON/MHW-armor.txt', (err, data) => {
+      fs.readFile('./server/JSON/MHW-armor.json', (err, data) => {
             if (err) throw res.json({ error: 'cannot read armor file' });
 
             let armorData = JSON.parse(data);
