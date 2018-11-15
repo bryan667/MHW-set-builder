@@ -64,7 +64,7 @@ class DropDownSkills extends Component {
             return (
                   <div>
                         {this.state.isLoading ? (
-                              <div className="drop">
+                              <div>
                                     <Segment>
                                           <Dimmer active inverted>
                                                 <Loader

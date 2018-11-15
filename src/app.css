@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 body {
       margin: 10px;
 }
@@ -6,12 +8,18 @@ body {
       margin: 10px;
 }
 
-.flex {
-      display: flex;
+.nav {
+      flex: 1;
+      min-width: 90px;
 }
 
-.side {
-      flex: 1;
+.flex {
+      display: flex;
+      justify-content: 'left'
+}
+
+.right {
+      flex: 16;
 }
 
 .half {
@@ -26,4 +34,9 @@ body {
 .center {
       width: 30%;
       margin: auto;
+}
+
+.collapse {
+      position: absolute;
+      z-index: 1
 }
