@@ -7,7 +7,7 @@ const ArmorResults = ({ value }) => {
                   <Form>
                         <TextArea
                               placeholder="Armor search results"
-                              style={{ minHeight: 800 }}
+                              style={{ minHeight: 750 }}
                               value={value}
                         />
                   </Form>
