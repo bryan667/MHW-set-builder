@@ -29,13 +29,13 @@ export const searchFunction = (selectedValues, options, armorList) => {
             }
       });
 
-      const filteredResults = [];
+      const filteredArmorResults = [];
 
       for (let searchVal of selectedValuesFiltered) {
             armorList.forEach(armor => {
                   armor.skills.forEach(armorSkills => {
                         if (searchVal.name === armorSkills.skillName) {
-                              filteredResults.push({
+                              filteredArmorResults.push({
                                     name: armor.name,
                                     type: armor.type,
                                     skills: armor.skills,
@@ -45,16 +45,20 @@ export const searchFunction = (selectedValues, options, armorList) => {
             });
       }
 
-      const assembledArmorResults = assembleArmor(filteredResults,selectedValuesFiltered)
+      console.log('select', selectedValuesFiltered)
+      console.log('awyi', filteredArmorResults)
+
+      const assembledArmorResults = assembleArmor(filteredArmorResults,selectedValuesFiltered)
 
       return assembledArmorResults;
 };
 
-const assembleArmor = (filteredResults, selectedValues) => {
+const assembleArmor = (filteredArmorResults, selectedValuesFiltered) => {
 
-      const classifiedArmor = classifyArmor(filteredResults);
+      const classifiedArmor = classifyArmor(filteredArmorResults);
 
       let passedArmor = [];
+      let count = 0;
 
       classifiedArmor.head.forEach(headArmor => {
             classifiedArmor.chest.forEach(chestArmor => {
@@ -68,18 +72,25 @@ const assembleArmor = (filteredResults, selectedValues) => {
                                           waistArmor,
                                           legsArmor,
                                     };
-                                    const goodArmor = compareIfPassed(
-                                          assembledArmor,
-                                          selectedValues
-                                    );
-                                    if (goodArmor !== null) {
-                                          passedArmor.push(goodArmor);
+                                    count = count + 1
+                                    const goodArmor = compareIfPassed(assembledArmor,selectedValuesFiltered);
+                                    if (goodArmor === true) {
+                                          passedArmor.push(assembledArmor);
                                     }
                               });
                         });
                   });
             });
       });
+
+      console.log('count:', count)
+      console.log(
+            'head:', classifiedArmor.head.length,
+            'chest:', classifiedArmor.chest.length,            
+            'gloves:', classifiedArmor.gloves.length,           
+            'waist:', classifiedArmor.waist.length,
+            'legs:', classifiedArmor.legs.length,
+      )
       return passedArmor;
 };
 
@@ -128,23 +139,12 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
       for (let key in assembledArmor) {
             assembledArmor[key].skills.forEach(skills => {
                   if (skills !== 'Any Skill') {
-                        if (
-                              armorSkillTotal.hasOwnProperty(
-                                    skills.skillName
-                              ) === true
-                        ) {
-                              armorSkillTotal[skills.skillName].skillName =
-                                    skills.skillName;
-                              armorSkillTotal[skills.skillName].points =
-                                    armorSkillTotal[skills.skillName].points +
-                                    skills.level;
+                        if (armorSkillTotal.hasOwnProperty(skills.skillName) === true) {
+                              armorSkillTotal[skills.skillName].skillName = skills.skillName;
+                              armorSkillTotal[skills.skillName].points = armorSkillTotal[skills.skillName].points + skills.level;
                         } else {
-                              armorSkillTotal[skills.skillName] = {
-                                    skillName: skills.skillName,
-                                    points: skills.level,
-                              };
+                              armorSkillTotal[skills.skillName] = {skillName: skills.skillName, points: skills.level};
                         }
-                  } else {
                   }
             });
       }
@@ -157,8 +157,7 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
                         for (let key in armorSkillTotal) {
                               if (selected.name === key) {
                                     if (
-                                          armorSkillTotal[key].points <
-                                          selected.level
+                                          armorSkillTotal[key].points < selected.level
                                     ) {
                                           passed = false;
                                     }
@@ -172,11 +171,7 @@ const compareIfPassed = (assembledArmor, selectedValues) => {
             passed = false;
       }
 
-      if (passed === true) {
-            return assembledArmor;
-      } else {
-            return null;
-      }
+      return passed
 };
 
 export const convertReadable = results => {

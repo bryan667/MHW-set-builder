@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-      Dropdown,
       Button,
       Dimmer,
       Loader,
@@ -14,9 +13,10 @@ import {
       convertReadable,
 } from '../misc/functions';
 import simpleImage from '../misc/images/short-paragraph.png';
+import DropdownSkills from './skill-dropdown'
 import ArmorResults from './armor-results';
 
-class DropDownSkills extends Component {
+class MainPage extends Component {
       state = {
             options: [],
             selectedValues: [],
@@ -77,12 +77,7 @@ class DropDownSkills extends Component {
                               </div>
                         ) : (
                               <div className="drop flex">
-                                    <Dropdown
-                                          placeholder="Type the skills to search"
-                                          fluid
-                                          multiple
-                                          search
-                                          selection
+                                    <DropdownSkills 
                                           options={this.state.options}
                                           onChange={this.handleChange}
                                     />
@@ -121,4 +116,4 @@ class DropDownSkills extends Component {
       }
 }
 
-export default DropDownSkills;
+export default MainPage;

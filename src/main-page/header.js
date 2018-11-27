@@ -11,7 +11,7 @@ const Header = () => {
             textAlign: 'center'
         }}
         >
-            MHW Armor Set Searcher
+            MHW Armor Set Builder
         </div>
     );
 };

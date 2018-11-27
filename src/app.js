@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './main-page/header'
-import DropDownSkills from './main-page/skills-dropdown';
+import MainPage from './main-page/index';
 import CollapseMenu from './components/collapse-menu'
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
                         <div className='drop'>
                               <div style={{marginRight: 20}}>
                                     <Header />
-                                    <DropDownSkills />
+                                    <MainPage />
                               </div>
                         </div>
                   </div>
