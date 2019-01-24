@@ -14,7 +14,7 @@ const port = process.env.PORT || 3010;
 app.use(express.static(path.join(__dirname, '/../build')))
 
 app.listen(port, () => {
-      console.log(`server running on port 3010`);
+      console.log(`running on port 3010`);
 });
 
 // ============================================= //
